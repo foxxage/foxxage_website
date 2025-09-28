@@ -119,7 +119,7 @@ export function ContactForm() {
         />
         <Button type="submit" disabled={isPending} className="w-full">
           {isPending ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
-          Make It Flow
+          Put the Fox to Work
         </Button>
       </form>
     </Form>
