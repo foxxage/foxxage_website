@@ -1,15 +1,9 @@
 import { ContactForm } from "@/components/contact-form";
-import { Mail, MessageCircle, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Mail, MessageCircle } from "lucide-react";
 
 const contactInfo = [
   { icon: Mail, text: "hi@foxxage.com", href: "mailto:hi@foxxage.com" },
   { icon: MessageCircle, text: "+91-9031998319", href: "https://wa.me/919031998319" },
-];
-
-const socialLinks = [
-  { icon: Instagram, name: "Instagram", href: "https://instagram.com/foxxage" },
-  { icon: Linkedin, name: "LinkedIn", href: "https://linkedin.com/company/foxxage" },
-  { icon: Twitter, name: "X", href: "https://x.com/foxxage" },
 ];
 
 export function ContactSection() {
@@ -27,14 +21,6 @@ export function ContactSection() {
                 <a key={item.text} href={item.href} className="flex items-center gap-4 group">
                   <item.icon className="h-6 w-6 text-primary" />
                   <span className="text-foreground/80 group-hover:text-primary transition-colors">{item.text}</span>
-                </a>
-              ))}
-            </div>
-             <div className="mt-8 flex space-x-4">
-              {socialLinks.map((social) => (
-                <a key={social.name} href={social.href} target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-primary transition-colors bg-secondary p-2 rounded-lg">
-                  <social.icon className="h-6 w-6" />
-                  <span className="sr-only">{social.name}</span>
                 </a>
               ))}
             </div>
