@@ -59,7 +59,7 @@ export function FaqSection() {
           </h2>
           <p className="mt-4 text-lg text-foreground/70">Quick answers to common questions.</p>
         </div>
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-4">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-4">
           {faqs.map((faq, index) => (
             <Accordion key={index} type="single" collapsible className="w-full">
               <AccordionItem value={`item-${index}`} className="glass-card animated-outline rounded-2xl px-6 border-b-0 mb-0">
