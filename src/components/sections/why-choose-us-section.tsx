@@ -16,7 +16,7 @@ const reasons = [
   {
     icon: ShieldCheck,
     title: "No Tech Headaches",
-    description: "We handle complexity so you don’t have to.",
+    description: "We handle the complexity, integrations, and setup — you focus on growth.",
   },
   {
     icon: User,
