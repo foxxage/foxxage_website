@@ -29,8 +29,16 @@ export function Footer() {
             ))}
           </div>
         </div>
-        <div className="mt-8 border-t border-white/10 pt-8 text-center">
+        <div className="mt-8 border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between text-center gap-4">
           <p className="text-sm leading-5 text-foreground/60">&copy; {new Date().getFullYear()} Foxxage. All rights reserved.</p>
+          <div className="flex items-center gap-4">
+            <Link href="/privacy-policy" className="text-sm text-foreground/60 hover:text-primary transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="/terms-conditions" className="text-sm text-foreground/60 hover:text-primary transition-colors">
+              Terms & Conditions
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
