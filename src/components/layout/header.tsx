@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Logo } from "@/components/logo";
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const navItems = [
   { name: "Home", href: "#home" },
@@ -31,7 +32,7 @@ export function Header() {
     <header
       className={cn(
         "sticky top-0 z-50 w-full transition-all duration-300",
-        isScrolled ? "bg-background/80 backdrop-blur-lg border-b border-white/10" : "bg-transparent"
+        isScrolled ? "bg-background/80 backdrop-blur-lg border-b border-border" : "bg-transparent"
       )}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -50,12 +51,14 @@ export function Header() {
               </Link>
             ))}
           </nav>
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center gap-2">
+            <ThemeToggle />
             <Button asChild className="animated-outline">
               <Link href="#contact">Book a Free Demo</Link>
             </Button>
           </div>
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-2">
+            <ThemeToggle />
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
