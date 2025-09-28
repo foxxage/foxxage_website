@@ -11,7 +11,7 @@ export function AboutSection() {
               At Foxxage, we believe automation shouldn’t feel complicated or corporate. It should feel clever, easy, and built just for you.
             </p>
             <p>
-              We help startups and SMEs unlock the power of AI Agents + Workflow Automation without the big budgets or long IT timelines. Whether it’s connecting your apps, answering your customers on WhatsApp, or turning raw data into insights, we make it all flow — the Foxxage way.
+              We help businesses unlock the power of AI Agents + Workflow Automation — minus the big budgets and complex setup. From connecting your apps to answering customers on WhatsApp, we make everything flow smarter — the Foxxage way.
             </p>
           </div>
         </div>
