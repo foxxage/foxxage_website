@@ -1,8 +1,9 @@
+
 export function AboutSection() {
   return (
     <section className="pt-0 pb-8 md:pb-12" id="about">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="glass-card animated-outline max-w-4xl mx-auto p-8 md:p-12 text-center rounded-2xl">
+        <div className="glass-card animated-outline max-w-5xl mx-auto p-8 md:p-12 text-center rounded-2xl">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             Let the Fox Handle It
           </h2>
