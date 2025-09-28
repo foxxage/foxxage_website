@@ -33,7 +33,7 @@ interface ServiceCardProps {
 
 function ServiceCard({ icon: Icon, title, description }: ServiceCardProps) {
   return (
-    <div className="glass-card animated-outline p-6 rounded-2xl flex flex-col items-start h-full">
+    <div className="glass-card animated-outline p-6 rounded-2xl flex flex-col items-start h-full transition-all duration-300 ease-in-out hover:-translate-y-1">
       <div className="bg-primary/10 p-3 rounded-lg mb-4">
         <Icon className="h-8 w-8 text-primary" />
       </div>
