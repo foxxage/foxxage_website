@@ -23,6 +23,7 @@ import { Loader2 } from "lucide-react";
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
   email: z.string().email({ message: "Please enter a valid email." }),
+  phone: z.string().optional(),
   message: z.string().min(10, { message: "Message must be at least 10 characters." }),
 });
 
@@ -35,6 +36,7 @@ export function ContactForm() {
     defaultValues: {
       name: "",
       email: "",
+      phone: "",
       message: "",
     },
   });
@@ -82,6 +84,19 @@ export function ContactForm() {
               <FormLabel>Email</FormLabel>
               <FormControl>
                 <Input placeholder="your.email@example.com" {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="phone"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Phone (Optional)</FormLabel>
+              <FormControl>
+                <Input placeholder="Your Phone Number" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
