@@ -1,10 +1,14 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { NodeAnimation } from '@/components/node-animation';
 
 export function HeroSection() {
   return (
-    <section className="relative py-16 md:py-20 lg:py-24 text-center" id="home">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative py-16 md:py-20 lg:py-24 text-center overflow-hidden" id="home">
+      <div className="absolute inset-0 z-0">
+        <NodeAnimation />
+      </div>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto">
           <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl xl:text-7xl">
             Work Less. Grow More.
