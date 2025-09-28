@@ -11,7 +11,7 @@ const services = [
   {
     icon: Zap,
     title: "Workflow Automation",
-    description: "We connect your apps and automate the boring stuff, saving you hours every week.",
+    description: "We connect your apps and eliminate repetitive tasks, so you save hours every week and focus on growing your business.",
   },
   {
     icon: LinkIcon,
