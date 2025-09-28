@@ -56,7 +56,7 @@ export function Header() {
             <div className="flex items-center gap-2">
               <ThemeToggle />
               <Button asChild className="animated-outline">
-                <Link href="#contact">Book a Free Demo</Link>
+                <Link href="#contact">Build My AI Agent</Link>
               </Button>
             </div>
           </div>
@@ -96,7 +96,7 @@ export function Header() {
                   </nav>
                   <div className="mt-auto">
                     <Button asChild className="w-full animated-outline">
-                       <Link href="#contact">Book a Free Demo</Link>
+                       <Link href="#contact">Build My AI Agent</Link>
                     </Button>
                   </div>
                 </div>

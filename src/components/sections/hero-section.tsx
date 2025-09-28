@@ -14,7 +14,7 @@ export function HeroSection() {
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Button size="lg" asChild className="shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-shadow">
-              <Link href="#contact">Book a Free Demo</Link>
+              <Link href="#contact">Build My AI Agent</Link>
             </Button>
           </div>
         </div>
