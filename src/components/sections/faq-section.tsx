@@ -59,10 +59,10 @@ export function FaqSection() {
           </h2>
           <p className="mt-4 text-lg text-foreground/70">Quick answers to common questions.</p>
         </div>
-        <div className="max-w-3xl mx-auto">
-          <Accordion type="single" collapsible className="w-full">
+        <div className="max-w-5xl mx-auto">
+          <Accordion type="single" collapsible className="w-full grid md:grid-cols-2 gap-4">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="glass-card animated-outline mb-4 rounded-2xl px-6">
+              <AccordionItem key={index} value={`item-${index}`} className="glass-card animated-outline rounded-2xl px-6 border-b-0 mb-0">
                 <AccordionTrigger className="text-left font-semibold text-lg hover:no-underline">
                   {faq.question}
                 </AccordionTrigger>
