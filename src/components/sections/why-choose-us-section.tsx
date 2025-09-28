@@ -21,7 +21,7 @@ const reasons = [
   {
     icon: User,
     title: "Human + AI",
-    description: "Automation that empowers, not replaces.",
+    description: "Smart tech plus real support — your perfect 24/7 teammate.",
   },
 ];
 
