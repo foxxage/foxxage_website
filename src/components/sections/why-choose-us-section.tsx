@@ -6,7 +6,7 @@ const reasons = [
   {
     icon: BrainCircuit,
     title: "Clever by Design",
-    description: "Smart solutions that save time & money.",
+    description: "Automation that saves hours & cuts costs — so you see impact from day one.",
   },
   {
     icon: Zap,
