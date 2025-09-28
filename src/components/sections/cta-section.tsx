@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 
 export function CtaSection() {
   return (
-    <section className="py-12 md:py-16">
+    <section className="py-8 md:py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="glass-pane">
             <div className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between text-center lg:text-left">

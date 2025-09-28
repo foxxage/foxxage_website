@@ -14,7 +14,7 @@ const socialLinks = [
 
 export function ContactSection() {
   return (
-    <section className="py-12 md:py-16" id="contact">
+    <section className="py-8 md:py-12" id="contact">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="glass-card animated-outline grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 p-8 md:p-12 rounded-2xl">
           <div>
