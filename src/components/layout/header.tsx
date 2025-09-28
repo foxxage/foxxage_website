@@ -40,23 +40,27 @@ export function Header() {
           <Link href="#" className="flex-shrink-0">
             <Logo />
           </Link>
-          <nav className="hidden md:flex md:items-center md:space-x-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="font-medium text-foreground/80 hover:text-primary transition-colors"
-              >
-                {item.name}
-              </Link>
-            ))}
-          </nav>
-          <div className="hidden md:flex items-center gap-2">
-            <ThemeToggle />
-            <Button asChild className="animated-outline">
-              <Link href="#contact">Book a Free Demo</Link>
-            </Button>
+          
+          <div className="hidden md:flex items-center gap-8">
+             <nav className="flex items-center space-x-8">
+              {navItems.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="font-medium text-foreground/80 hover:text-primary transition-colors"
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </nav>
+            <div className="flex items-center gap-2">
+              <ThemeToggle />
+              <Button asChild className="animated-outline">
+                <Link href="#contact">Book a Free Demo</Link>
+              </Button>
+            </div>
           </div>
+
           <div className="md:hidden flex items-center gap-2">
             <ThemeToggle />
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
