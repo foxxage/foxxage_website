@@ -7,26 +7,47 @@ import {
 
 const faqs = [
   {
-    question: "What kind of businesses do you work with?",
-    answer: "We primarily work with startups and small to medium-sized enterprises (SMEs). Our solutions are designed to be scalable and affordable, making them a perfect fit for growing businesses that want to leverage AI and automation without the enterprise-level price tag."
+    question: "1️⃣ What is an AI Agent?",
+    answer: "An AI Agent is like a smart digital teammate. It can chat with customers, answer questions, capture leads, and even perform tasks — all automatically, 24/7."
   },
   {
-    question: "Is this going to be expensive?",
-    answer: "Not at all. We pride ourselves on providing cost-effective solutions. We'll work with your budget to identify the highest-impact automation opportunities, ensuring you get the best return on your investment."
+    question: "2️⃣ How can automation help my business?",
+    answer: "Automation removes repetitive, boring tasks so you can focus on growth. Think: no more manual copy-pasting, no more missed leads, and no more answering the same questions over and over."
   },
   {
-    question: "How long does it take to build an AI agent?",
-    answer: "The timeline depends on the complexity of the agent and the integrations required. However, our process is built for speed. Simple agents can often be deployed within a week, while more complex projects may take a few weeks. We'll give you a clear timeline upfront."
+    question: "3️⃣ Do I need technical skills to use Foxxage solutions?",
+    answer: "Nope 🦊 — we handle the technical setup for you. You just tell us what you need automated, and we deliver a ready-to-use system."
   },
   {
-    question: "Do I need to be a tech expert to use your services?",
-    answer: "Absolutely not! That's what we're here for. We handle all the technical heavy lifting, from setup to integration and maintenance. We deliver a ready-to-use solution and provide the training you need to manage it with ease."
+    question: "4️⃣ Can you integrate with the tools I already use?",
+    answer: "Yes! We integrate with CRMs, WhatsApp, Gmail, Slack, Google Sheets, HubSpot, Notion, and dozens of other tools. If it has an API, we can connect it."
   },
   {
-    question: "Can you integrate with the software I already use?",
-    answer: "Yes, most likely. We can integrate with hundreds of popular apps, including CRMs, email marketing platforms, payment gateways, and social media tools like WhatsApp. Let us know what you're using, and we'll figure out the best way to connect everything."
+    question: "5️⃣ How long does it take to set up?",
+    answer: "Most projects are ready in a few days to a couple of weeks, depending on complexity. No long IT timelines."
+  },
+  {
+    question: "6️⃣ Is this affordable for small businesses?",
+    answer: "Absolutely. We design solutions to be cost-effective and scalable — so you only pay for what you actually need."
+  },
+  {
+    question: "7️⃣ What if I need changes later?",
+    answer: "No problem. We can add new automations, tweak existing workflows, or expand your setup as your business grows."
+  },
+  {
+    question: "8️⃣ Do AI Agents replace my employees?",
+    answer: "No — they empower them. AI Agents take care of repetitive work so your team can focus on creative, high-impact tasks."
+  },
+  {
+    question: "9️⃣ Is my data safe?",
+    answer: "Yes. We use secure integrations and industry best practices to keep your data protected. Your privacy and confidentiality are a top priority."
+  },
+  {
+    question: "🔟 How do we get started?",
+    answer: "Easy — click “Build My AI Agent”, tell us about your workflow or problem, and we’ll design your first automation or AI Agent."
   }
 ];
+
 
 export function FaqSection() {
   return (
