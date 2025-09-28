@@ -16,7 +16,7 @@ const services = [
   {
     icon: LinkIcon,
     title: "Seamless Integrations",
-    description: "CRM, WhatsApp, Email, APIs — we make your tools talk to each other.",
+    description: "WhatsApp, CRM, Google Sheets, Slack, HubSpot, Email — we make them work together in one smooth, connected system.",
   },
   {
     icon: BarChartBig,
