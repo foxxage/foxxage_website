@@ -21,7 +21,7 @@ const services = [
   {
     icon: BarChartBig,
     title: "Smart Insights",
-    description: "Automation is only as good as the data. We deliver insights that drive growth.",
+    description: "Get clear, automated reports and insights so you know exactly what’s working and where to focus next.",
   },
 ];
 
