@@ -8,10 +8,13 @@ export function AboutSection() {
           </h2>
           <div className="mt-6 space-y-4 text-foreground/80">
             <p>
-              At Foxxage, we believe automation shouldn’t feel complicated or corporate. It should feel clever, easy, and built just for you.
+              Automation shouldn’t feel complicated or corporate. At Foxxage, we make it clever, simple, and built just for you.
             </p>
             <p>
-              We help businesses unlock the power of AI Agents + Workflow Automation — minus the big budgets and complex setup. From connecting your apps to answering customers on WhatsApp, we make everything flow smarter — the Foxxage way.
+              Our AI Agents and workflow automations take care of the busywork — connecting your tools, answering customers on WhatsApp, and turning data into decisions — so you can stay focused on growing your business.
+            </p>
+            <p>
+              When the fox handles it, your business never misses a beat.
             </p>
           </div>
         </div>
