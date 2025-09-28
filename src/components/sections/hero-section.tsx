@@ -10,7 +10,7 @@ export function HeroSection() {
             Work Less. Grow More.
           </h1>
           <p className="mt-6 text-lg leading-8 text-foreground/80 sm:text-xl">
-            At Foxxage, we build AI Agents and Workflow Automations for startups and SMEs — so you can focus on growth, not busywork.
+            At Foxxage, we design AI Agents and Workflow Automations that work 24/7 — so you can work smarter, not harder.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Button size="lg" asChild className="shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-shadow">
