@@ -10,7 +10,7 @@ const reasons = [
   },
   {
     icon: Zap,
-    title: "Built for Startups",
+    title: "Fast & Affordable",
     description: "Go live in days, not months — with pricing that fits your budget and scales as you grow.",
   },
   {
