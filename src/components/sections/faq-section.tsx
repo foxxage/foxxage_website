@@ -7,43 +7,43 @@ import {
 
 const faqs = [
   {
-    question: "1️⃣ What is an AI Agent?",
+    question: "What is an AI Agent?",
     answer: "An AI Agent is like a smart digital teammate. It can chat with customers, answer questions, capture leads, and even perform tasks — all automatically, 24/7."
   },
   {
-    question: "2️⃣ How can automation help my business?",
+    question: "How can automation help my business?",
     answer: "Automation removes repetitive, boring tasks so you can focus on growth. Think: no more manual copy-pasting, no more missed leads, and no more answering the same questions over and over."
   },
   {
-    question: "3️⃣ Do I need technical skills to use Foxxage solutions?",
+    question: "Do I need technical skills to use Foxxage solutions?",
     answer: "Nope 🦊 — we handle the technical setup for you. You just tell us what you need automated, and we deliver a ready-to-use system."
   },
   {
-    question: "4️⃣ Can you integrate with the tools I already use?",
+    question: "Can you integrate with the tools I already use?",
     answer: "Yes! We integrate with CRMs, WhatsApp, Gmail, Slack, Google Sheets, HubSpot, Notion, and dozens of other tools. If it has an API, we can connect it."
   },
   {
-    question: "5️⃣ How long does it take to set up?",
+    question: "How long does it take to set up?",
     answer: "Most projects are ready in a few days to a couple of weeks, depending on complexity. No long IT timelines."
   },
   {
-    question: "6️⃣ Is this affordable for small businesses?",
+    question: "Is this affordable for small businesses?",
     answer: "Absolutely. We design solutions to be cost-effective and scalable — so you only pay for what you actually need."
   },
   {
-    question: "7️⃣ What if I need changes later?",
+    question: "What if I need changes later?",
     answer: "No problem. We can add new automations, tweak existing workflows, or expand your setup as your business grows."
   },
   {
-    question: "8️⃣ Do AI Agents replace my employees?",
+    question: "Do AI Agents replace my employees?",
     answer: "AI Agents don’t replace your whole team — but they can take over repetitive, time-consuming tasks, so you don’t need to hire extra staff for busywork. This means lower costs, fewer errors, and faster response times, all while keeping your business lean and efficient."
   },
   {
-    question: "9️⃣ Is my data safe?",
+    question: "Is my data safe?",
     answer: "Yes. We use secure integrations and industry best practices to keep your data protected. Your privacy and confidentiality are a top priority."
   },
   {
-    question: "🔟 How do we get started?",
+    question: "How do we get started?",
     answer: "Easy — click “Build My AI Agent”, tell us about your workflow or problem, and we’ll design your first automation or AI Agent."
   }
 ];
