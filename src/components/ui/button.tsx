@@ -44,7 +44,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const Comp = asChild ? Slot : "button"
     return (
       <Comp
-        className={cn(buttonVariants({ variant, size, className }), "animated-outline")}
+        className={cn(buttonVariants({ variant, size, className }), "animated-outline hover:animate-fade-in-up")}
         ref={ref}
         {...props}
       />
