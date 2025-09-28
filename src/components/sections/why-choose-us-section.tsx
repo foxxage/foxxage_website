@@ -75,7 +75,7 @@ export function WhyChooseUsSection() {
                         <div
                             key={card.title}
                             className={cn(
-                                "glass-card absolute inset-0 p-8 md:p-12 transition-all duration-300 ease-out rounded-3xl",
+                                "glass-card animated-outline absolute inset-0 p-8 md:p-12 transition-all duration-300 ease-out rounded-3xl",
                                 "flex flex-col items-center justify-center text-center"
                             )}
                             style={{

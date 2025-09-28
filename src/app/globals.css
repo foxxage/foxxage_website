@@ -94,4 +94,27 @@
   .glass-pane {
     @apply bg-white/5 backdrop-blur-xl border-y border-white/10;
   }
+  .animated-outline {
+    @apply relative overflow-hidden;
+  }
+  .animated-outline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    border: 1px solid transparent;
+    background: linear-gradient(120deg, hsl(var(--primary) / 0.5), transparent, hsl(var(--primary) / 0.5)) border-box;
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+  }
+  .animated-outline:hover::before {
+    opacity: 1;
+  }
 }

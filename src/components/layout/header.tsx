@@ -51,7 +51,7 @@ export function Header() {
             ))}
           </nav>
           <div className="hidden md:block">
-            <Button asChild>
+            <Button asChild className="animated-outline">
               <Link href="#contact">Book a Free Demo</Link>
             </Button>
           </div>
@@ -88,7 +88,7 @@ export function Header() {
                     ))}
                   </nav>
                   <div className="mt-auto">
-                    <Button asChild className="w-full">
+                    <Button asChild className="w-full animated-outline">
                        <Link href="#contact">Book a Free Demo</Link>
                     </Button>
                   </div>

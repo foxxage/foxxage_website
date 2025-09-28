@@ -16,7 +16,7 @@ export function ContactSection() {
   return (
     <section className="py-16 md:py-24" id="contact">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="glass-card grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 p-8 md:p-12 rounded-2xl">
+        <div className="glass-card animated-outline grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 p-8 md:p-12 rounded-2xl">
           <div>
             <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
               Let’s Build Your AI Agent
