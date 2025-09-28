@@ -10,11 +10,11 @@ import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 const navItems = [
-  { name: "Home", href: "#home" },
-  { name: "Services", href: "#services" },
-  { name: "Why Us", href: "#why-us" },
-  { name: "Contact", href: "#contact" },
-  { name: "FAQs", href: "#faq" },
+  { name: "HOME", href: "#home" },
+  { name: "SERVICES", href: "#services" },
+  { name: "WHY US", href: "#why-us" },
+  { name: "CONTACT", href: "#contact" },
+  { name: "FAQS", href: "#faq" },
 ];
 
 export function Header() {
