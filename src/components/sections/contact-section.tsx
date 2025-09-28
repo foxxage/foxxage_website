@@ -2,7 +2,7 @@ import { ContactForm } from "@/components/contact-form";
 import { Mail, MessageCircle, Instagram, Linkedin, Twitter } from "lucide-react";
 
 const contactInfo = [
-  { icon: Mail, text: "hello@foxxage.com", href: "mailto:hello@foxxage.com" },
+  { icon: Mail, text: "hi@foxxage.com", href: "mailto:hi@foxxage.com" },
   { icon: MessageCircle, text: "+91-9031998319", href: "https://wa.me/919031998319" },
 ];
 
