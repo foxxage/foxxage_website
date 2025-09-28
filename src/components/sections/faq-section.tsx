@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     question: "8️⃣ Do AI Agents replace my employees?",
-    answer: "No — they empower them. AI Agents take care of repetitive work so your team can focus on creative, high-impact tasks."
+    answer: "AI Agents don’t replace your whole team — but they can take over repetitive, time-consuming tasks, so you don’t need to hire extra staff for busywork. This means lower costs, fewer errors, and faster response times, all while keeping your business lean and efficient."
   },
   {
     question: "9️⃣ Is my data safe?",
