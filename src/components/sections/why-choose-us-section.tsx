@@ -11,7 +11,7 @@ const reasons = [
   {
     icon: Zap,
     title: "Built for Startups",
-    description: "Fast, affordable, and scalable as you grow.",
+    description: "Go live in days, not months — with pricing that fits your budget and scales as you grow.",
   },
   {
     icon: ShieldCheck,
