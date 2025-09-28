@@ -4,7 +4,7 @@ export function AboutSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="glass-card animated-outline max-w-4xl mx-auto p-8 md:p-12 text-center rounded-2xl">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Clever Automation. Smarter Growth.
+            Let the Fox Handle It
           </h2>
           <div className="mt-6 space-y-4 text-foreground/80">
             <p>
