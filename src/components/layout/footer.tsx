@@ -24,9 +24,9 @@ export function Footer() {
           <div className="space-y-4">
             <Logo />
             <p className="text-foreground/70 text-base">Work Less. Grow More.</p>
-             <div className="flex space-x-6">
+             <div className="flex space-x-4">
               {socialLinks.map((social) => (
-                <a key={social.name} href={social.href} target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-primary transition-colors">
+                <a key={social.name} href={social.href} target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-primary transition-colors bg-secondary p-2 rounded-lg">
                   <social.icon className="h-6 w-6" />
                   <span className="sr-only">{social.name}</span>
                 </a>

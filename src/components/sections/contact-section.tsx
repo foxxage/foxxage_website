@@ -30,9 +30,9 @@ export function ContactSection() {
                 </a>
               ))}
             </div>
-             <div className="mt-8 flex space-x-6">
+             <div className="mt-8 flex space-x-4">
               {socialLinks.map((social) => (
-                <a key={social.name} href={social.href} target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-primary transition-colors">
+                <a key={social.name} href={social.href} target="_blank" rel="noopener noreferrer" className="text-foreground/60 hover:text-primary transition-colors bg-secondary p-2 rounded-lg">
                   <social.icon className="h-6 w-6" />
                   <span className="sr-only">{social.name}</span>
                 </a>
