@@ -82,6 +82,7 @@ export default function TermsAndConditionsPage() {
           <br />
 
           <h2><strong>11. Contact Us</strong></h2>
+          <br />
           <p>If you have questions about these Terms, contact us at:</p>
           <ul>
             <li>📩 Email: hi@foxxage.com</li>
