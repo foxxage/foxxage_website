@@ -38,6 +38,9 @@ export function Footer() {
             <Link href="/terms-conditions" className="text-sm text-foreground/60 hover:text-primary transition-colors">
               Terms & Conditions
             </Link>
+            <Link href="/refund-cancellation-policy" className="text-sm text-foreground/60 hover:text-primary transition-colors">
+              Refund & Cancellation Policy
+            </Link>
           </div>
         </div>
       </div>
