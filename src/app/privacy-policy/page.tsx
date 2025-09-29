@@ -16,6 +16,7 @@ export default function PrivacyPolicyPage() {
           <br />
 
           <h2><strong>1. Information We Collect</strong></h2>
+          <br />
           <p>We may collect:</p>
           <ul>
             <li><strong>Personal Information:</strong> Name, email address, phone number, or other details you voluntarily submit through our contact form or when booking a service.</li>
