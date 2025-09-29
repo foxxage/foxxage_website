@@ -10,7 +10,7 @@ export default function PrivacyPolicyPage() {
           <h1>Privacy Policy</h1>
           <br />
           <p>Effective Date: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
-          
+          <br />
           <p>At Foxxage, your privacy matters to us. This Privacy Policy explains what data we collect, how we use it, and how we keep it safe when you visit our website or use our services.</p>
 
           <br />
