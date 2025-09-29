@@ -52,6 +52,7 @@ export default function RefundCancellationPolicyPage() {
             <li>📩 Email: hi@foxxage.com</li>
             <li>📞 WhatsApp: +91-90319-98319</li>
           </ul>
+          <br />
           <p>We will review your request and process eligible refunds within 7-10 business days.</p>
 
           <br />
