@@ -37,7 +37,6 @@ export default function TermsAndConditionsPage() {
             <li>Use our services only for lawful purposes.</li>
             <li>Not misuse our website or attempt to disrupt its functionality (e.g., hacking, spreading malware).</li>
           </ul>
-
           <br />
 
           <h2><strong>4. Payments & Pricing</strong></h2>
@@ -71,6 +70,7 @@ export default function TermsAndConditionsPage() {
           <br />
 
           <h2><strong>9. Termination</strong></h2>
+          <br />
           <p>We reserve the right to suspend or terminate access to our services if these Terms are violated or if there is misuse of our platform.</p>
 
           <br />
