@@ -7,34 +7,56 @@ export default function PrivacyPolicyPage() {
       <Header />
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="max-w-4xl mx-auto prose dark:prose-invert">
-          <h1>Privacy Policy</h1>
-          <p>Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+          <h1>Foxxage Privacy Policy</h1>
+          <p>Effective Date: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
           
-          <p>Welcome to Foxxage. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.</p>
+          <p>At Foxxage, your privacy matters to us. This Privacy Policy explains what data we collect, how we use it, and how we keep it safe when you visit our website or use our services.</p>
 
-          <h2>Information We Collect</h2>
-          <p>We may collect personal information from you such as your name, email address, phone number, and message when you fill out our contact form. We may also collect non-personal information, such as browser type, operating system, and web pages visited to help us manage our website.</p>
-
-          <h2>Use of Your Information</h2>
-          <p>We use the information we collect to:</p>
+          <h2>1. Information We Collect</h2>
+          <p>We may collect:</p>
           <ul>
-            <li>Respond to your inquiries and fulfill your requests.</li>
-            <li>Send you marketing and promotional communications.</li>
-            <li>Improve our website and services.</li>
-            <li>Understand how our services are used.</li>
+            <li><strong>Personal Information:</strong> Name, email address, phone number, or other details you voluntarily submit through our contact form or when booking a service.</li>
+            <li><strong>Usage Data:</strong> Information about how you use our website (pages visited, time on site, device information, IP address) to improve our services.</li>
+            <li><strong>Cookies & Tracking:</strong> We may use cookies to enhance your experience, remember preferences, and analyze website traffic.</li>
           </ul>
 
-          <h2>Sharing Your Information</h2>
-          <p>We do not sell, trade, or otherwise transfer to outside parties your Personally Identifiable Information unless we provide users with advance notice. This does not include website hosting partners and other parties who assist us in operating our website, conducting our business, or serving our users, so long as those parties agree to keep this information confidential.</p>
+          <h2>2. How We Use Your Information</h2>
+          <p>We use your information to:</p>
+          <ul>
+            <li>Provide and improve our services</li>
+            <li>Respond to your inquiries or support requests</li>
+            <li>Send relevant updates, if you opted in</li>
+            <li>Analyze usage patterns to optimize website performance</li>
+          </ul>
+          <p>We never sell, trade, or rent your personal information to third parties.</p>
 
-          <h2>Security of Your Information</h2>
-          <p>We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable, and no method of data transmission can be guaranteed against any interception or other type of misuse.</p>
+          <h2>3. Third-Party Services</h2>
+          <p>We may use trusted third-party tools like analytics providers, chatbots, or payment processors. These services have their own privacy policies and may collect data to perform their function (for example, Google Analytics for traffic analysis).</p>
 
-          <h2>Changes to This Privacy Policy</h2>
-          <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.</p>
+          <h2>4. Data Protection</h2>
+          <p>We use secure systems to store and protect your personal data. Access is restricted to authorized personnel only, and we take steps to prevent unauthorized access, alteration, or disclosure.</p>
 
-          <h2>Contact Us</h2>
-          <p>If you have any questions about this Privacy Policy, please contact us at hi@foxxage.com.</p>
+          <h2>5. Your Rights</h2>
+          <p>Depending on your location, you may have the right to:</p>
+          <ul>
+            <li>Access the data we have about you</li>
+            <li>Request corrections or deletion</li>
+            <li>Opt out of communications</li>
+            <li>Disable cookies in your browser settings</li>
+          </ul>
+
+          <h2>6. Cookies</h2>
+          <p>You can accept or refuse cookies. Please note that disabling cookies may affect how our website functions.</p>
+
+          <h2>7. Changes to This Policy</h2>
+          <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated “Effective Date.”</p>
+          
+          <h2>8. Contact Us</h2>
+          <p>If you have any questions about this Privacy Policy or how we handle your data, you can reach us at:</p>
+          <ul>
+            <li>📩 Email: hi@foxxage.com</li>
+            <li>📞 Phone/WhatsApp: +91-90319-98319</li>
+          </ul>
         </div>
       </main>
       <Footer />
