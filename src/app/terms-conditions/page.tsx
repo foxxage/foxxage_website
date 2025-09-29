@@ -24,6 +24,7 @@ export default function TermsAndConditionsPage() {
           <br />
 
           <h2><strong>2. Services Provided</strong></h2>
+          <br />
           <p>Foxxage provides AI Agents, workflow automation solutions, and related consulting services. We strive to keep our services available, reliable, and secure, but we do not guarantee uninterrupted or error-free operation.</p>
 
           <br />
