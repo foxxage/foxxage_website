@@ -1,5 +1,6 @@
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import Link from "next/link";
 
 export default function TermsAndConditionsPage() {
   return (
@@ -8,30 +9,51 @@ export default function TermsAndConditionsPage() {
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="max-w-4xl mx-auto prose dark:prose-invert">
           <h1>Terms & Conditions</h1>
-          <p>Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+          <p>Effective Date: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
 
-          <p>Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the Foxxage website (the "Service") operated by Foxxage ("us", "we", or "our").</p>
+          <p>Welcome to Foxxage! By using our website and services, you agree to the following Terms & Conditions. Please read them carefully before proceeding.</p>
 
-          <h2>Agreement to Terms</h2>
-          <p>By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of the terms, then you may not access the Service.</p>
+          <h2>1. Acceptance of Terms</h2>
+          <p>By accessing or using our website and services, you agree to be bound by these Terms. If you do not agree, please do not use our services.</p>
 
-          <h2>Services</h2>
-          <p>We provide AI agents and workflow automation services. The specifics of the services will be outlined in a separate agreement or statement of work. We reserve the right to modify or discontinue the Service at any time without prior notice.</p>
-          
-          <h2>Intellectual Property</h2>
-          <p>The Service and its original content, features, and functionality are and will remain the exclusive property of Foxxage and its licensors. The Service is protected by copyright, trademark, and other laws of both the foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of Foxxage.</p>
+          <h2>2. Services Provided</h2>
+          <p>Foxxage provides AI Agents, workflow automation solutions, and related consulting services. We strive to keep our services available, reliable, and secure, but we do not guarantee uninterrupted or error-free operation.</p>
 
-          <h2>Limitation of Liability</h2>
-          <p>In no event shall Foxxage, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Service; (ii) any conduct or content of any third party on the Service; (iii) any content obtained from the Service; and (iv) unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.</p>
+          <h2>3. User Responsibilities</h2>
+          <p>By using Foxxage, you agree to:</p>
+          <ul>
+            <li>Provide accurate information when filling out forms or contacting us.</li>
+            <li>Use our services only for lawful purposes.</li>
+            <li>Not misuse our website or attempt to disrupt its functionality (e.g., hacking, spreading malware).</li>
+          </ul>
 
-          <h2>Governing Law</h2>
-          <p>These Terms shall be governed and construed in accordance with the laws of the jurisdiction in which our company is established, without regard to its conflict of law provisions.</p>
+          <h2>4. Payments & Pricing</h2>
+          <p>Where applicable, service fees will be agreed upon before any work begins. Payments must be made according to the agreed terms. Late or missing payments may result in delayed delivery or suspension of services.</p>
 
-          <h2>Changes</h2>
-          <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</p>
+          <h2>5. Intellectual Property</h2>
+          <p>All content on this website — including logos, graphics, text, and designs — is the property of Foxxage unless otherwise stated. You may not copy, reproduce, or use our intellectual property without prior written consent.</p>
 
-          <h2>Contact Us</h2>
-          <p>If you have any questions about these Terms, please contact us at hi@foxxage.com.</p>
+          <h2>6. Third-Party Tools & Links</h2>
+          <p>Our website may include links or integrations with third-party services. We are not responsible for the content, policies, or performance of these external sites or tools.</p>
+
+          <h2>7. Limitation of Liability</h2>
+          <p>Foxxage is not liable for any indirect, incidental, or consequential damages arising from the use of our website or services. Our total liability will not exceed the amount paid by you for the service in question.</p>
+
+          <h2>8. Privacy & Data Protection</h2>
+          <p>Your privacy is important to us. Please review our <Link href="/privacy-policy">Privacy Policy</Link> to understand how we collect, use, and protect your information.</p>
+
+          <h2>9. Termination</h2>
+          <p>We reserve the right to suspend or terminate access to our services if these Terms are violated or if there is misuse of our platform.</p>
+
+          <h2>10. Changes to Terms</h2>
+          <p>We may update these Terms from time to time. Any changes will be posted on this page with an updated “Effective Date.” Continued use of our website means you accept the revised Terms.</p>
+
+          <h2>11. Contact Us</h2>
+          <p>If you have questions about these Terms, contact us at:</p>
+          <ul>
+            <li>📩 Email: hi@foxxage.com</li>
+            <li>📞 Phone/WhatsApp: +91-90319-98319</li>
+          </ul>
         </div>
       </main>
       <Footer />
