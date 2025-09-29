@@ -65,6 +65,7 @@ export default function TermsAndConditionsPage() {
           <br />
 
           <h2><strong>8. Privacy & Data Protection</strong></h2>
+          <br />
           <p>Your privacy is important to us. Please review our <Link href="/privacy-policy">Privacy Policy</Link> to understand how we collect, use, and protect your information.</p>
 
           <br />
