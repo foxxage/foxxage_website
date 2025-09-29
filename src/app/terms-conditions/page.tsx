@@ -59,6 +59,7 @@ export default function TermsAndConditionsPage() {
           <br />
 
           <h2><strong>7. Limitation of Liability</strong></h2>
+          <br />
           <p>Foxxage is not liable for any indirect, incidental, or consequential damages arising from the use of our website or services. Our total liability will not exceed the amount paid by you for the service in question.</p>
 
           <br />
