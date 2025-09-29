@@ -18,7 +18,9 @@ export default function RefundCancellationPolicyPage() {
           <h2><strong>1. Cancellations</strong></h2>
           <ul>
             <li><strong>Before Work Begins:</strong> You may cancel your project before we start working on it for a full refund.</li>
+            <br />
             <li><strong>After Work Has Started:</strong> If work has already begun, we may deduct a portion of the payment for the work already completed.</li>
+            <br />
             <li><strong>After Delivery:</strong> Once we deliver the completed solution, cancellations are no longer accepted.</li>
           </ul>
 
