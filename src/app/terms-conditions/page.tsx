@@ -53,6 +53,7 @@ export default function TermsAndConditionsPage() {
           <br />
 
           <h2><strong>6. Third-Party Tools & Links</strong></h2>
+          <br />
           <p>Our website may include links or integrations with third-party services. We are not responsible for the content, policies, or performance of these external sites or tools.</p>
 
           <br />
