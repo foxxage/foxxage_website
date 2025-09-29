@@ -76,6 +76,7 @@ export default function TermsAndConditionsPage() {
           <br />
 
           <h2><strong>10. Changes to Terms</strong></h2>
+          <br />
           <p>We may update these Terms from time to time. Any changes will be posted on this page with an updated “Effective Date.” Continued use of our website means you accept the revised Terms.</p>
 
           <br />
