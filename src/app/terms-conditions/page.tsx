@@ -30,6 +30,7 @@ export default function TermsAndConditionsPage() {
           <br />
 
           <h2><strong>3. User Responsibilities</strong></h2>
+          <br />
           <p>By using Foxxage, you agree to:</p>
           <ul>
             <li>Provide accurate information when filling out forms or contacting us.</li>
