@@ -41,6 +41,7 @@ export default function TermsAndConditionsPage() {
           <br />
 
           <h2><strong>4. Payments & Pricing</strong></h2>
+          <br />
           <p>Where applicable, service fees will be agreed upon before any work begins. Payments must be made according to the agreed terms. Late or missing payments may result in delayed delivery or suspension of services.</p>
 
           <br />
