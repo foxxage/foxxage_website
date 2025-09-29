@@ -1,3 +1,4 @@
+
 import { ShieldCheck, Zap, User, BrainCircuit } from "lucide-react";
 import type { LucideProps } from "lucide-react";
 import type { FC } from "react";
@@ -33,7 +34,7 @@ interface ReasonCardProps {
 
 function ReasonCard({ icon: Icon, title, description }: ReasonCardProps) {
   return (
-    <div className="glass-card animated-outline p-6 rounded-2xl flex flex-col items-start h-full transition-all duration-300 ease-in-out">
+    <div className="glass-card animated-outline p-6 rounded-2xl flex flex-col items-start h-full transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10">
       <div className="bg-primary/10 p-3 rounded-lg mb-4">
         <Icon className="h-8 w-8 text-primary" />
       </div>
