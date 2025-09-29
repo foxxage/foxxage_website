@@ -31,7 +31,7 @@ export default function RefundCancellationPolicyPage() {
             <li>Project is partially completed → pro-rated refund based on percentage of work done.</li>
             <li>If we are unable to deliver the agreed solution due to technical reasons on our end, you will receive a full refund.</li>
           </ul>
-          <p>Refunds are not provided for:</p>
+          <p><strong>Refunds are not provided for:</strong></p>
           <ul>
             <li>Change of mind after delivery.</li>
             <li>Client delays, missing information, or failure to provide required inputs.</li>
