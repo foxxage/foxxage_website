@@ -25,7 +25,7 @@ export default function RefundCancellationPolicyPage() {
           <br />
 
           <h2><strong>2. Refunds</strong></h2>
-          <p>Refunds may be issued in the following cases:</p>
+          <p><strong>Refunds may be issued in the following cases:</strong></p>
           <ul>
             <li>Project is cancelled before work begins → 100% refund.</li>
             <li>Project is partially completed → pro-rated refund based on percentage of work done.</li>
