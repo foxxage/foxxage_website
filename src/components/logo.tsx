@@ -3,52 +3,8 @@ import type { SVGProps } from 'react';
 export function Logo(props: SVGProps<SVGSVGElement>) {
   return (
     <div className="flex items-center gap-2" {...props}>
-      <svg
-        width="28"
-        height="28"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="text-primary"
-      >
-        <path
-          d="M17.5 3.5L14 7H10L6.5 3.5L12 1L17.5 3.5Z"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M6.5 3.5V9.5L12 14L17.5 9.5V3.5"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M12 23V14"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M10 7H6"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M14 7H18"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <circle cx="12" cy="22" r="1" fill="currentColor" />
-        <circle cx="6" cy="9.5" r="1" fill="currentColor" />
-        <circle cx="18" cy="9.5" r="1" fill="currentColor" />
+      <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+        <image xlinkHref="data:image/png;base64,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" x="0" y="0" width="30" height="30"/>
       </svg>
       <span className="font-headline text-2xl font-bold text-foreground">foxxage</span>
     </div>
