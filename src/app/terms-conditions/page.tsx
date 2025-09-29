@@ -18,6 +18,7 @@ export default function TermsAndConditionsPage() {
           <br />
 
           <h2><strong>1. Acceptance of Terms</strong></h2>
+          <br />
           <p>By accessing or using our website and services, you agree to be bound by these Terms. If you do not agree, please do not use our services.</p>
 
           <br />
