@@ -16,6 +16,7 @@ export default function RefundCancellationPolicyPage() {
           <br />
 
           <h2><strong>1. Cancellations</strong></h2>
+          <br />
           <ul>
             <li><strong>Before Work Begins:</strong> You may cancel your project before we start working on it for a full refund.</li>
             <br />
@@ -44,11 +45,13 @@ export default function RefundCancellationPolicyPage() {
           <br />
 
           <h2><strong>3. Revisions</strong></h2>
+          <br />
           <p>We offer revisions according to the agreed project scope. Additional revisions or changes outside the original scope may incur extra charges.</p>
 
           <br />
 
           <h2><strong>4. How to Request a Refund or Cancellation</strong></h2>
+          <br />
           <p>To request a refund or cancel a project:</p>
           <ul>
             <li>📩 Email: hi@foxxage.com</li>
@@ -60,6 +63,7 @@ export default function RefundCancellationPolicyPage() {
           <br />
 
           <h2><strong>5. Disputes</strong></h2>
+          <br />
           <p>If you are dissatisfied with the service, contact us first so we can resolve the issue. We value fair, friendly solutions and will do our best to make things right.</p>
         </div>
       </main>
