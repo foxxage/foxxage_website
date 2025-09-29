@@ -56,9 +56,9 @@ export default function RefundCancellationPolicyPage() {
           </ul>
           <br />
           <p>We will review your request and process eligible refunds within 7-10 business days.</p>
-
-          <br />
           
+          <br />
+
           <h2><strong>5. Disputes</strong></h2>
           <p>If you are dissatisfied with the service, contact us first so we can resolve the issue. We value fair, friendly solutions and will do our best to make things right.</p>
         </div>
