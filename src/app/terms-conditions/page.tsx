@@ -47,6 +47,7 @@ export default function TermsAndConditionsPage() {
           <br />
 
           <h2><strong>5. Intellectual Property</strong></h2>
+          <br />
           <p>All content on this website — including logos, graphics, text, and designs — is the property of Foxxage unless otherwise stated. You may not copy, reproduce, or use our intellectual property without prior written consent.</p>
 
           <br />
