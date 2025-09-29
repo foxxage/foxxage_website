@@ -12,6 +12,8 @@ export default function PrivacyPolicyPage() {
           
           <p>At Foxxage, your privacy matters to us. This Privacy Policy explains what data we collect, how we use it, and how we keep it safe when you visit our website or use our services.</p>
 
+          <br />
+
           <h2><strong>1. Information We Collect</strong></h2>
           <p>We may collect:</p>
           <ul>
