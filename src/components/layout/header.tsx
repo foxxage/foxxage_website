@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 const navItems = [
-  { name: "HOME", href: "#home" },
+  { name: "HOME", href: "/" },
   { name: "SERVICES", href: "#services" },
   { name: "WHY US", href: "#why-us" },
   { name: "CONTACT", href: "#contact" },
@@ -38,7 +38,7 @@ export function Header() {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
-          <Link href="#" className="flex-shrink-0">
+          <Link href="/" className="flex-shrink-0">
             <Logo />
           </Link>
           
