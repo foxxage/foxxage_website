@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { ArrowRight, Bot, Wrench, BrainCircuit, CheckCircle } from 'lucide-react';
 
 const desktopNodes = [
-  { id: 'start', x: 5, y: 50, label: 'Trigger', icon: ArrowRight },
+  { id: 'start', x: 5, y: 50, label: 'Input', icon: ArrowRight },
   { id: 'qualify', x: 25, y: 50, label: 'AI Agent', icon: Bot },
   { id: 'email', x: 50, y: 25, label: 'Tools', icon: Wrench },
   { id: 'wait', x: 50, y: 75, label: 'Think', icon: BrainCircuit },
@@ -14,7 +14,7 @@ const desktopNodes = [
 ];
 
 const mobileNodes = [
-  { id: 'start', x: 50, y: 10, label: 'Trigger', icon: ArrowRight },
+  { id: 'start', x: 50, y: 10, label: 'Input', icon: ArrowRight },
   { id: 'qualify', x: 50, y: 30, label: 'AI Agent', icon: Bot },
   { id: 'email', x: 25, y: 50, label: 'Tools', icon: Wrench },
   { id: 'wait', x: 75, y: 50, label: 'Think', icon: BrainCircuit },
