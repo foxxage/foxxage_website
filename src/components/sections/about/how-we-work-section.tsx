@@ -25,15 +25,18 @@ export function HowWeWorkSection() {
           <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-center mb-12">
             How We Work
           </h2>
-          <div className="relative">
-            <div className="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-primary/30" aria-hidden="true"></div>
+          <div className="relative md:pl-0">
+            <div
+              className="absolute left-4 md:left-1/2 -translate-x-1/2 h-full w-0.5 bg-primary/30"
+              aria-hidden="true"
+            ></div>
             <ul className="space-y-12">
               {steps.map((step, index) => (
-                <li key={step.title} className="relative flex items-center">
-                  <div className="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background"></div>
-                  <div className="w-full">
-                    <div className={`flex ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
-                      <div className={`w-1/2 ${index % 2 === 0 ? 'pl-10 text-left' : 'pr-10 text-right'}`}>
+                <li key={step.title} className="relative flex items-start md:items-center">
+                  <div className="absolute left-4 md:left-1/2 -translate-x-1/2 mt-1 md:mt-0 w-4 h-4 bg-primary rounded-full border-4 border-background"></div>
+                  <div className="w-full pl-12 md:pl-0">
+                    <div className={`flex md:w-full ${index % 2 === 0 ? 'md:justify-start' : 'md:justify-end'}`}>
+                      <div className={`md:w-1/2 ${index % 2 === 0 ? 'md:pl-10 md:text-left' : 'md:pr-10 md:text-right'}`}>
                         <h4 className="font-headline text-xl font-semibold text-foreground">{step.title}</h4>
                         <p className="mt-2 text-foreground/80">{step.description}</p>
                       </div>
