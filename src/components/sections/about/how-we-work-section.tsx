@@ -19,7 +19,7 @@ const steps = [
   },
   {
     title: "Refine",
-    description: "We refine and improve based on your feedback. 2 rounds of revisions included.",
+    description: "We refine the system based on your feedback, making it smarter and better over time.",
   },
 ];
 
