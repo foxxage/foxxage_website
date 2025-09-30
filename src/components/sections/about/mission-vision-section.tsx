@@ -5,7 +5,7 @@ export function MissionVisionSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           <div className="glass-card animated-outline p-8 rounded-2xl">
             <h3 className="font-headline text-2xl font-bold mb-4">Mission</h3>
-            <p className="text-foreground/80">To make AI Agents and workflow automation accessible — fast, affordable, and built for real businesses.</p>
+            <p className="text-foreground/80">AI shouldn’t be a luxury. Our mission is to help every business tap into the power of AI and automation — without big budgets or long timelines.</p>
           </div>
           <div className="glass-card animated-outline p-8 rounded-2xl">
             <h3 className="font-headline text-2xl font-bold mb-4">Vision</h3>
