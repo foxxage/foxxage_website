@@ -3,24 +3,22 @@
 
 import React, { useEffect, useState } from 'react';
 import { cn } from "@/lib/utils";
-import { ArrowRight, Mail, Hourglass, Bot, CheckCircle, BrainCircuit } from 'lucide-react';
+import { ArrowRight, Mail, Hourglass, Bot, CheckCircle, BrainCircuit, Wrench } from 'lucide-react';
 
 const nodes = [
   { id: 'start', x: 5, y: 50, label: 'Trigger', icon: ArrowRight },
   { id: 'qualify', x: 25, y: 50, label: 'AI Agent', icon: Bot },
-  { id: 'email', x: 50, y: 25, label: 'Send Email', icon: Mail },
+  { id: 'email', x: 50, y: 25, label: 'Tools', icon: Wrench },
   { id: 'wait', x: 50, y: 75, label: 'Think', icon: BrainCircuit },
-  { id: 'followup', x: 75, y: 50, label: 'Follow Up', icon: Mail },
-  { id: 'end', x: 95, y: 50, label: 'Output', icon: CheckCircle },
+  { id: 'end', x: 85, y: 50, label: 'Output', icon: CheckCircle },
 ];
 
 const links = [
   { source: 'start', target: 'qualify' },
   { source: 'qualify', target: 'email' },
   { source: 'qualify', target: 'wait' },
-  { source: 'email', target: 'followup' },
-  { source: 'wait', target: 'followup' },
-  { source: 'followup', target: 'end' },
+  { source: 'email', target: 'end' },
+  { source: 'wait', target: 'end' },
 ];
 
 export const WorkflowAnimation = () => {
@@ -34,8 +32,6 @@ export const WorkflowAnimation = () => {
       { links: [1, 2] },
       { nodes: ['email', 'wait'] },
       { links: [3, 4] },
-      { nodes: ['followup'] },
-      { links: [5] },
       { nodes: ['end'] },
     ];
 
@@ -53,26 +49,8 @@ export const WorkflowAnimation = () => {
       }
     }, 1000);
 
-    const resetTimeout = setTimeout(() => {
-        setVisibleElements({ nodes: [], links: [] });
-        step = 0;
-        const restartInterval = setInterval(() => {
-            if (step < sequence.length) {
-                const currentStep = sequence[step];
-                setVisibleElements(prev => ({
-                    nodes: [...new Set([...prev.nodes, ...(currentStep.nodes || [])])],
-                    links: [...new Set([...prev.links, ...(currentStep.links || [])])],
-                }));
-                step++;
-            } else {
-                clearInterval(restartInterval);
-            }
-        }, 1000)
-    }, (sequence.length + 2) * 1000)
-
     return () => {
         clearInterval(interval)
-        clearTimeout(resetTimeout)
     };
   }, []);
 
