@@ -11,7 +11,7 @@ const nodes = [
   { id: 'email', x: 50, y: 25, label: 'Send Email', icon: Mail },
   { id: 'wait', x: 50, y: 75, label: 'Wait 24h', icon: Hourglass },
   { id: 'followup', x: 75, y: 50, label: 'Follow Up', icon: Mail },
-  { id: 'end', x: 95, y: 50, label: 'Booked', icon: CheckCircle },
+  { id: 'end', x: 95, y: 50, label: 'Output', icon: CheckCircle },
 ];
 
 const links = [
