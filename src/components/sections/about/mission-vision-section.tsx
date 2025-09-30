@@ -9,7 +9,7 @@ export function MissionVisionSection() {
           </div>
           <div className="glass-card animated-outline p-8 rounded-2xl">
             <h3 className="font-headline text-2xl font-bold mb-4">Vision</h3>
-            <p className="text-foreground/80">A future where work runs on smart workflows and people do more meaningful work.</p>
+            <p className="text-foreground/80">To create a world where humans focus on creativity and strategy, while AI handles the repetitive work in the background.</p>
           </div>
         </div>
       </div>
