@@ -3,9 +3,9 @@
 
 import React, { useEffect, useState } from 'react';
 import { cn } from "@/lib/utils";
-import { ArrowRight, Mail, Hourglass, Bot, CheckCircle, BrainCircuit, Wrench } from 'lucide-react';
+import { ArrowRight, Bot, Wrench, BrainCircuit, CheckCircle } from 'lucide-react';
 
-const nodes = [
+const desktopNodes = [
   { id: 'start', x: 5, y: 50, label: 'Trigger', icon: ArrowRight },
   { id: 'qualify', x: 25, y: 50, label: 'AI Agent', icon: Bot },
   { id: 'email', x: 50, y: 25, label: 'Tools', icon: Wrench },
@@ -13,7 +13,15 @@ const nodes = [
   { id: 'end', x: 85, y: 50, label: 'Output', icon: CheckCircle },
 ];
 
-const links = [
+const mobileNodes = [
+  { id: 'start', x: 50, y: 10, label: 'Trigger', icon: ArrowRight },
+  { id: 'qualify', x: 50, y: 30, label: 'AI Agent', icon: Bot },
+  { id: 'email', x: 25, y: 50, label: 'Tools', icon: Wrench },
+  { id: 'wait', x: 75, y: 50, label: 'Think', icon: BrainCircuit },
+  { id: 'end', x: 50, y: 70, label: 'Output', icon: CheckCircle },
+]
+
+const desktopLinks = [
   { source: 'start', target: 'qualify' },
   { source: 'qualify', target: 'email' },
   { source: 'qualify', target: 'wait' },
@@ -21,8 +29,26 @@ const links = [
   { source: 'wait', target: 'end' },
 ];
 
+const mobileLinks = [
+  { source: 'start', target: 'qualify' },
+  { source: 'qualify', target: 'email' },
+  { source: 'qualify', target: 'wait' },
+  { source: 'email', target: 'end' },
+  { source: 'wait', target: 'end' },
+]
+
 export const WorkflowAnimation = () => {
   const [visibleElements, setVisibleElements] = useState<{ nodes: string[], links: number[] }>({ nodes: [], links: [] });
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   useEffect(() => {
     const sequence = [
@@ -54,10 +80,12 @@ export const WorkflowAnimation = () => {
     };
   }, []);
 
+  const nodes = isMobile ? mobileNodes : desktopNodes;
+  const links = isMobile ? mobileLinks : desktopLinks;
+
   return (
-    <div className="w-full max-w-2xl mx-auto aspect-[2/1] relative my-8">
+    <div className="w-full max-w-2xl mx-auto aspect-[4/3] md:aspect-[2/1] relative my-8">
       <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" className="absolute inset-0">
-        {/* Links */}
         <defs>
           <marker id="arrowhead" markerWidth="5" markerHeight="3.5" refX="5" refY="1.75" orient="auto">
             <polygon points="0 0, 5 1.75, 0 3.5" className="fill-primary" />
@@ -69,17 +97,21 @@ export const WorkflowAnimation = () => {
           const isVisible = visibleElements.links.includes(index);
           const pathId = `link-path-${index}`;
           
+          const pathD = isMobile
+            ? `M ${sourceNode.x} ${sourceNode.y} L ${targetNode.x} ${targetNode.y}`
+            : `M ${sourceNode.x} ${sourceNode.y} C ${sourceNode.x + 10} ${sourceNode.y}, ${targetNode.x - 10} ${targetNode.y}, ${targetNode.x} ${targetNode.y}`
+
           return (
              <g key={index} className={cn("transition-opacity duration-500", isVisible ? "opacity-100" : "opacity-0")}>
               <path
                 id={pathId}
-                d={`M ${sourceNode.x} ${sourceNode.y} C ${sourceNode.x + 10} ${sourceNode.y}, ${targetNode.x - 10} ${targetNode.y}, ${targetNode.x} ${targetNode.y}`}
+                d={pathD}
                 stroke="hsl(var(--border))"
                 strokeWidth="0.5"
                 fill="none"
               />
               <path
-                d={`M ${sourceNode.x} ${sourceNode.y} C ${sourceNode.x + 10} ${sourceNode.y}, ${targetNode.x - 10} ${targetNode.y}, ${targetNode.x} ${targetNode.y}`}
+                d={pathD}
                 className="stroke-primary"
                 strokeWidth="0.5"
                 fill="none"
@@ -95,7 +127,6 @@ export const WorkflowAnimation = () => {
         })}
       </svg>
 
-      {/* Nodes */}
       {nodes.map(node => {
         const isVisible = visibleElements.nodes.includes(node.id);
         const Icon = node.icon;
@@ -103,7 +134,7 @@ export const WorkflowAnimation = () => {
           <div
             key={node.id}
             className={cn(
-              "absolute -translate-y-1/2 flex items-center gap-2 glass-card rounded-lg p-2 text-xs shadow-lg transition-all duration-300",
+              "absolute flex items-center gap-2 glass-card rounded-lg p-2 text-xs shadow-lg transition-all duration-300",
               isVisible ? "opacity-100 scale-100" : "opacity-0 scale-90"
             )}
             style={{ left: `${node.x}%`, top: `${node.y}%`, transform: `translateX(-50%) translateY(-50%)` }}
