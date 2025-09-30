@@ -20,7 +20,9 @@ export function AboutHeroSection() {
           <p className="mt-4 text-base leading-7 text-foreground/70 sm:text-lg">
             At Foxxage, we build AI Agents and smart automations that remove busywork, cut costs, and help teams focus on what matters. Fast. Affordable. Human-backed.
           </p>
-          <MultiTaskingAnimation />
+          <div className="mx-8">
+            <MultiTaskingAnimation />
+          </div>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-x-6">
             <Button size="lg" asChild className="shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-shadow">
               <Link href="/#contact">Build My AI Agent</Link>
