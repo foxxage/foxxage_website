@@ -17,6 +17,7 @@ export default function Home() {
         <AboutSection />
         <ServicesSection />
         <WhyChooseUsSection />
+        <CtaSection />
         <ContactSection />
         <FaqSection />
       </main>
