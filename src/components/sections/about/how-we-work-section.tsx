@@ -49,13 +49,13 @@ export function HowWeWorkSection() {
                     "relative flex items-start md:items-center transition-all duration-500 ease-in-out",
                     inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
                   )}
-                  style={{ transitionDelay: `${index * 200}ms` }}
+                  style={{ transitionDelay: `${index * 300}ms` }}
                 >
                   <div className={cn(
                       "absolute left-4 md:left-1/2 -translate-x-1/2 mt-1 md:mt-0 w-4 h-4 bg-primary rounded-full border-4 border-background transition-transform duration-500 ease-in-out",
                       inView ? "scale-100" : "scale-0"
                     )}
-                    style={{ transitionDelay: `${index * 200 + 100}ms` }}
+                    style={{ transitionDelay: `${index * 300 + 200}ms` }}
                   ></div>
                   <div className="w-full pl-12 md:pl-0">
                     <div
