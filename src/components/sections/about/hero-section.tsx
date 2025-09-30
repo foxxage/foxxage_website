@@ -21,7 +21,7 @@ export function AboutHeroSection() {
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Button size="lg" asChild className="shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-shadow">
-              <Link href="/#contact">Let’s Automate This!</Link>
+              <Link href="/#contact">Build My AI Agent</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <Link href="/#services">See Our Services</Link>
