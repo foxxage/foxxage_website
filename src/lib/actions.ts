@@ -6,7 +6,7 @@ const formSchema = z.object({
   name: z.string(),
   email: z.string().email(),
   phone: z.string(),
-  message: z.string(),
+  message: z.string().optional(),
 });
 
 export async function submitContactForm(values: z.infer<typeof formSchema>) {
