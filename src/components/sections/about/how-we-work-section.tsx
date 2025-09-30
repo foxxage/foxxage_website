@@ -23,7 +23,7 @@ const steps = [
   },
   {
     title: "Maintain & Support",
-    description: "We provide ongoing support to ensure your automations run smoothly and adapt to your changing needs."
+    description: "We keep your workflows running smoothly and provide help whenever you need it."
   }
 ];
 
