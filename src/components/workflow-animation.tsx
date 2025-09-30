@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { ArrowRight, Mail, Hourglass, Bot, CheckCircle } from 'lucide-react';
 
 const nodes = [
-  { id: 'start', x: 5, y: 50, label: 'Lead', icon: ArrowRight },
+  { id: 'start', x: 5, y: 50, label: 'Trigger', icon: ArrowRight },
   { id: 'qualify', x: 25, y: 50, label: 'Qualify', icon: Bot },
   { id: 'email', x: 50, y: 25, label: 'Send Email', icon: Mail },
   { id: 'wait', x: 50, y: 75, label: 'Wait 24h', icon: Hourglass },
