@@ -1,4 +1,5 @@
-import { Lightbulb, Rocket, ShieldCheck, Handshake } from "lucide-react";
+
+import { Lightbulb, Rocket, CircleDollarSign, Handshake } from "lucide-react";
 import type { LucideProps } from "lucide-react";
 import type { FC } from "react";
 
@@ -14,7 +15,7 @@ const values = [
     description: "Launch in days, not months.",
   },
   {
-    icon: ShieldCheck,
+    icon: CircleDollarSign,
     title: "Affordability",
     description: "Pay for what you need and scale up.",
   },
