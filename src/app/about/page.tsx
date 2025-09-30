@@ -50,7 +50,7 @@ export default function AboutPage() {
         <HowWeWorkSection />
         <StatsSection />
         <CtaSection
-          title="Ready to Outsmart Work?"
+          title="Ready to Outfox Work?"
           subtitle="Tell us what’s slowing you down — we’ll build an AI Agent that fixes it."
           buttonText="Build My AI Agent"
           buttonLink="/#contact"
