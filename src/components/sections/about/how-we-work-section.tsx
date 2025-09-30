@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 const steps = [
   {
-    title: "Discovery",
+    title: "Understand",
     description: "We start by understanding your goals, needs, and current workflow.",
   },
   {
