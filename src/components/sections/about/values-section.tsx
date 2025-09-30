@@ -7,7 +7,7 @@ const values = [
   {
     icon: Lightbulb,
     title: "Clever Solutions",
-    description: "Tailored automations that actually help.",
+    description: "Built to solve real problems, not create new ones.",
   },
   {
     icon: Rocket,
