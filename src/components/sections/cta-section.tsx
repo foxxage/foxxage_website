@@ -11,7 +11,7 @@ interface CtaSectionProps {
 export function CtaSection({
   title = "Ready to Build Your Automation?",
   subtitle = "Tell us about your needs and we’ll craft the perfect solution.",
-  buttonText = "Put the Fox to Work",
+  buttonText = "Build My AI Agent",
   buttonLink = "#contact"
 }: CtaSectionProps) {
   return (
