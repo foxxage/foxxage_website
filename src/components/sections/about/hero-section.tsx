@@ -11,7 +11,7 @@ export function AboutHeroSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto">
           <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            Outsmart Work. The Foxxage Way.
+            Outfox Work. The Foxxage Way.
           </h1>
           <p className="mt-6 text-lg font-medium text-foreground/80 sm:text-xl">
             Your 24/7 Digital Teammate.
