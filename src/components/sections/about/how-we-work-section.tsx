@@ -1,6 +1,7 @@
+
 "use client";
 
-import { useInView } from "react-intersection-observer";
+import { useState, useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 
 const steps = [
@@ -23,52 +24,69 @@ const steps = [
 ];
 
 export function HowWeWorkSection() {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.2,
-  });
+  const [scrollProgress, setScrollProgress] = useState(0);
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (sectionRef.current) {
+        const { top, height } = sectionRef.current.getBoundingClientRect();
+        const screenHeight = window.innerHeight;
+        
+        // Start animation when the top of the section is visible
+        // and end when the bottom of the section has been scrolled past
+        const progress = Math.max(0, Math.min(1, (screenHeight - top) / (height + screenHeight * 0.5)));
+        setScrollProgress(progress);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Initial check
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <section className="py-16 md:py-24" ref={ref}>
+    <section className="py-16 md:py-24" ref={sectionRef}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-center mb-12">
+          <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-center mb-16">
             How We Work
           </h2>
-          <div className="relative md:pl-0">
-            <div
-              className="absolute left-4 md:left-1/2 -translate-x-1/2 h-full w-0.5 bg-primary/30 transition-all duration-1000 ease-out"
-              style={{ height: inView ? "100%" : "0%" }}
-              aria-hidden="true"
-            ></div>
-            <ul className="space-y-12">
-              {steps.map((step, index) => (
-                <li
-                  key={step.title}
-                  className={cn(
-                    "relative flex items-start md:items-center transition-all duration-500 ease-in-out",
-                    inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                  )}
-                  style={{ transitionDelay: `${index * 300}ms` }}
-                >
-                  <div className={cn(
-                      "absolute left-4 md:left-1/2 -translate-x-1/2 mt-1 md:mt-0 w-4 h-4 bg-primary rounded-full border-4 border-background transition-transform duration-500 ease-in-out",
-                      inView ? "scale-100" : "scale-0"
-                    )}
-                    style={{ transitionDelay: `${index * 300 + 200}ms` }}
-                  ></div>
-                  <div className="w-full pl-12 md:pl-0">
+          <div className="relative">
+            <div className="absolute left-4 md:left-1/2 -translate-x-1/2 w-0.5 bg-primary/30 top-0 bottom-0" aria-hidden="true">
+               <div
+                className="w-full bg-primary transition-all duration-100 ease-linear"
+                style={{ height: `${scrollProgress * 100}%` }}
+              ></div>
+            </div>
+            <ul className="space-y-16">
+              {steps.map((step, index) => {
+                const stepProgress = Math.max(0, Math.min(1, (scrollProgress - index * 0.2) / 0.2));
+
+                return (
+                  <li
+                    key={step.title}
+                    className="relative flex items-center"
+                    style={{
+                      opacity: stepProgress,
+                      transform: `translateY(${(1 - stepProgress) * 1}rem)`,
+                      transition: 'opacity 0.3s ease-out, transform 0.3s ease-out',
+                    }}
+                  >
                     <div
-                      className={`flex md:w-full ${
-                        index % 2 === 0 ? "md:justify-start" : "md:justify-end"
-                      }`}
-                    >
-                      <div
-                        className={`md:w-1/2 ${
-                          index % 2 === 0
-                            ? "md:pl-10 md:text-left"
-                            : "md:pr-10 md:text-right"
-                        }`}
+                      className="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 bg-background border-2 border-primary rounded-full transition-transform duration-300"
+                      style={{ transform: `scale(${stepProgress})` }}
+                    ></div>
+                    <div className={cn(
+                      "w-full pl-12 md:pl-0",
+                      index % 2 === 0 ? "md:text-left" : "md:text-right"
+                    )}>
+                       <div
+                        className={cn(
+                          "md:w-1/2",
+                          index % 2 === 0 ? "md:pl-10" : "md:ml-auto md:pr-10"
+                        )}
                       >
                         <h4 className="font-headline text-xl font-semibold text-foreground">
                           {step.title}
@@ -78,9 +96,9 @@ export function HowWeWorkSection() {
                         </p>
                       </div>
                     </div>
-                  </div>
-                </li>
-              ))}
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
