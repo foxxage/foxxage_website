@@ -21,6 +21,10 @@ const steps = [
     title: "Refine",
     description: "We refine the system based on your feedback, making it smarter and better over time.",
   },
+  {
+    title: "Maintain & Support",
+    description: "We provide ongoing support to ensure your automations run smoothly and adapt to your changing needs."
+  }
 ];
 
 export function HowWeWorkSection() {
@@ -62,7 +66,7 @@ export function HowWeWorkSection() {
             </div>
             <ul className="space-y-16">
               {steps.map((step, index) => {
-                const stepProgress = Math.max(0, Math.min(1, (scrollProgress - index * 0.2) / 0.2));
+                const stepProgress = Math.max(0, Math.min(1, (scrollProgress - index * (1 / (steps.length -1) * 0.8) ) / 0.2));
 
                 return (
                   <li
