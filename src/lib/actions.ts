@@ -10,24 +10,34 @@ const formSchema = z.object({
 });
 
 export async function submitContactForm(values: z.infer<typeof formSchema>) {
-  // Simulate a network delay
-  await new Promise(resolve => setTimeout(resolve, 1000));
-  
   const parsed = formSchema.safeParse(values);
 
   if (!parsed.success) {
     return { success: false, message: "Invalid form data." };
   }
-  
-  // Here you would typically send an email, save to a database, etc.
-  // For this example, we'll just log the data and return a success message.
-  
-  console.log("Form submitted:", parsed.data);
 
-  // You can randomly simulate an error for testing
-  // if (Math.random() > 0.5) {
-  //   return { success: false, message: "A simulated server error occurred." };
-  // }
+  const webhookUrl = process.env.WEBHOOK_URL || "https://foxxage-n8n.vl5tvz.easypanel.host/webhook/Goji";
 
-  return { success: true };
+  try {
+    const response = await fetch(webhookUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(parsed.data),
+    });
+
+    if (!response.ok) {
+      const errorBody = await response.text();
+      console.error("Webhook submission failed:", errorBody);
+      return { success: false, message: `The server responded with an error: ${response.status}` };
+    }
+    
+    console.log("Form submitted successfully to webhook.");
+    return { success: true };
+
+  } catch (error) {
+    console.error("An error occurred while submitting the form:", error);
+    return { success: false, message: "A network error occurred. Please try again." };
+  }
 }
