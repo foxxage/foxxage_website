@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect, useRef } from 'react';
@@ -7,7 +8,6 @@ const stats = [
   { name: 'Automations Built', value: 20, suffix: '+' },
   { name: 'Hours Saved Monthly', value: 1200, suffix: '+' },
   { name: 'Integrations Supported', value: 500, suffix: '+' },
-  { name: 'Support', value: 24, suffix: '/7' },
 ]
 
 interface AnimatedNumberProps {
@@ -60,7 +60,7 @@ export function StatsSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-8">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-4">
+            <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
               {stats.map((stat) => (
                 <div key={stat.name} className="mx-auto flex max-w-xs flex-col gap-y-4">
                   <dt className="text-base leading-7 text-foreground/70">{stat.name}</dt>
