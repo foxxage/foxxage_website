@@ -5,7 +5,6 @@ import { AboutHeroSection } from "@/components/sections/about/hero-section";
 import { StorySection } from "@/components/sections/about/story-section";
 import { MissionVisionSection } from "@/components/sections/about/mission-vision-section";
 import { ValuesSection } from "@/components/sections/about/values-section";
-import { WhyFoxxageSection } from "@/components/sections/about/why-foxxage-section";
 import { HowWeWorkSection } from "@/components/sections/about/how-we-work-section";
 import { StatsSection } from "@/components/sections/about/stats-section";
 import { CtaSection } from "@/components/sections/cta-section";
@@ -48,7 +47,6 @@ export default function AboutPage() {
         <StorySection />
         <MissionVisionSection />
         <ValuesSection />
-        <WhyFoxxageSection />
         <HowWeWorkSection />
         <StatsSection />
         <CtaSection
