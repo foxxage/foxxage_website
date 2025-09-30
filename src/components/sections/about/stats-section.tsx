@@ -9,7 +9,7 @@ export function StatsSection() {
   return (
     <section className="py-8 md:py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="glass-pane">
+        <div className="py-8">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-4">
               {stats.map((stat) => (
