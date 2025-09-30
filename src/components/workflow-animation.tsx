@@ -1,15 +1,17 @@
+
 "use client";
 
 import React, { useEffect, useState } from 'react';
 import { cn } from "@/lib/utils";
+import { ArrowRight, Mail, Hourglass, Bot, CheckCircle } from 'lucide-react';
 
 const nodes = [
-  { id: 'start', x: 5, y: 50, label: 'Lead' },
-  { id: 'qualify', x: 25, y: 50, label: 'Qualify' },
-  { id: 'email', x: 50, y: 25, label: 'Send Email' },
-  { id: 'wait', x: 50, y: 75, label: 'Wait 24h' },
-  { id: 'followup', x: 75, y: 50, label: 'Follow Up' },
-  { id: 'end', x: 95, y: 50, label: 'Booked' },
+  { id: 'start', x: 5, y: 50, label: 'Lead', icon: ArrowRight },
+  { id: 'qualify', x: 25, y: 50, label: 'Qualify', icon: Bot },
+  { id: 'email', x: 50, y: 25, label: 'Send Email', icon: Mail },
+  { id: 'wait', x: 50, y: 75, label: 'Wait 24h', icon: Hourglass },
+  { id: 'followup', x: 75, y: 50, label: 'Follow Up', icon: Mail },
+  { id: 'end', x: 95, y: 50, label: 'Booked', icon: CheckCircle },
 ];
 
 const links = [
@@ -57,28 +59,42 @@ export const WorkflowAnimation = () => {
   }, []);
 
   return (
-    <div className="w-full max-w-lg mx-auto aspect-[2/1] relative my-8">
-      <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <div className="w-full max-w-2xl mx-auto aspect-[2/1] relative my-8">
+      <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" className="absolute inset-0">
         {/* Links */}
         <defs>
           <marker id="arrowhead" markerWidth="5" markerHeight="3.5" refX="5" refY="1.75" orient="auto">
-            <polygon points="0 0, 5 1.75, 0 3.5" fill="hsl(var(--primary))" />
+            <polygon points="0 0, 5 1.75, 0 3.5" className="fill-primary" />
           </marker>
         </defs>
         {links.map((link, index) => {
           const sourceNode = nodes.find(n => n.id === link.source)!;
           const targetNode = nodes.find(n => n.id === link.target)!;
           const isVisible = visibleElements.links.includes(index);
+          const pathId = `link-path-${index}`;
+          
           return (
-            <path
-              key={index}
-              d={`M ${sourceNode.x + 5} ${sourceNode.y} C ${sourceNode.x + 15} ${sourceNode.y}, ${targetNode.x - 15} ${targetNode.y}, ${targetNode.x - 5} ${targetNode.y}`}
-              stroke="hsl(var(--primary))"
-              strokeWidth="0.5"
-              fill="none"
-              markerEnd="url(#arrowhead)"
-              className={cn("transition-opacity duration-500", isVisible ? "opacity-50" : "opacity-0")}
-            />
+             <g key={index} className={cn("transition-opacity duration-500", isVisible ? "opacity-100" : "opacity-0")}>
+              <path
+                id={pathId}
+                d={`M ${sourceNode.x} ${sourceNode.y} C ${sourceNode.x + 10} ${sourceNode.y}, ${targetNode.x - 10} ${targetNode.y}, ${targetNode.x} ${targetNode.y}`}
+                stroke="hsl(var(--border))"
+                strokeWidth="0.5"
+                fill="none"
+              />
+              <path
+                d={`M ${sourceNode.x} ${sourceNode.y} C ${sourceNode.x + 10} ${sourceNode.y}, ${targetNode.x - 10} ${targetNode.y}, ${targetNode.x} ${targetNode.y}`}
+                className="stroke-primary"
+                strokeWidth="0.5"
+                fill="none"
+                markerEnd="url(#arrowhead)"
+                style={{
+                  strokeDasharray: 500,
+                  strokeDashoffset: isVisible ? 0 : 500,
+                  transition: 'stroke-dashoffset 0.5s ease-in-out',
+                }}
+              />
+            </g>
           );
         })}
       </svg>
@@ -86,16 +102,20 @@ export const WorkflowAnimation = () => {
       {/* Nodes */}
       {nodes.map(node => {
         const isVisible = visibleElements.nodes.includes(node.id);
+        const Icon = node.icon;
         return (
           <div
             key={node.id}
             className={cn(
-              "absolute -translate-x-1/2 -translate-y-1/2 glass-card rounded-lg px-2 py-1 text-xs shadow-lg transition-all duration-500",
+              "absolute -translate-y-1/2 flex items-center gap-2 glass-card rounded-lg p-2 text-xs shadow-lg transition-all duration-300",
               isVisible ? "opacity-100 scale-100" : "opacity-0 scale-90"
             )}
-            style={{ left: `${node.x}%`, top: `${node.y}%` }}
+            style={{ left: `${node.x}%`, top: `${node.y}%`, transform: `translateX(-50%) translateY(-50%)` }}
           >
-            {node.label}
+             <div className="bg-primary/10 p-1.5 rounded-md">
+                <Icon className="h-4 w-4 text-primary" />
+             </div>
+             <span className="font-medium pr-2">{node.label}</span>
           </div>
         );
       })}
