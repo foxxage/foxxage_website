@@ -11,7 +11,7 @@ const tasks = [
   { id: 'mail', label: 'Answering Mails', icon: Mail, x: 50, y: 10 },
   { id: 'crm', label: 'Updating CRM', icon: DatabaseZap, x: 90, y: 50 },
   { id: 'reports', label: 'Generating Reports', icon: BarChart3, x: 50, y: 90 },
-  { id: 'chat', label: 'Chatting with Leads', icon: MessageSquare, x: 10, y: 50 },
+  { id: 'chat', label: 'Chatting', icon: MessageSquare, x: 10, y: 50 },
 ];
 
 export const MultiTaskingAnimation = () => {
