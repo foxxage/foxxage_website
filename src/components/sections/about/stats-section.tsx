@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 const stats = [
-  { name: 'Automations Built', value: 50, suffix: '+' },
+  { name: 'Automations Built', value: 20, suffix: '+' },
   { name: 'Hours Saved Monthly', value: 1200, suffix: '+' },
   { name: 'Integrations Supported', value: 500, suffix: '+' },
   { name: 'Support', value: 24, suffix: '/7' },
