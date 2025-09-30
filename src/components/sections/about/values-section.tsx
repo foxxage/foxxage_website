@@ -1,5 +1,5 @@
 
-import { Lightbulb, Rocket, CircleDollarSign, Handshake } from "lucide-react";
+import { Lightbulb, Rocket, CircleDollarSign, ShieldCheck } from "lucide-react";
 import type { LucideProps } from "lucide-react";
 import type { FC } from "react";
 
@@ -20,7 +20,7 @@ const values = [
     description: "Pay for what you need and scale up.",
   },
   {
-    icon: Handshake,
+    icon: ShieldCheck,
     title: "Data Safety",
     description: "Your information stays secure, always.",
   },
