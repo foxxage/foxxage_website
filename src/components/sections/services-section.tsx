@@ -1,6 +1,25 @@
-import { BotMessageSquare, Zap, Link as LinkIcon, BarChartBig } from "lucide-react";
+import { BotMessageSquare, Link as LinkIcon, BarChartBig } from "lucide-react";
 import type { LucideProps } from "lucide-react";
-import type { FC } from "react";
+import type { FC, SVGProps } from "react";
+
+const WorkflowIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <rect width="8" height="8" x="3" y="3" rx="2" />
+    <path d="M7 11v4a2 2 0 0 0 2 2h4" />
+    <rect width="8" height="8" x="13" y="13" rx="2" />
+  </svg>
+);
 
 const services = [
   {
@@ -9,7 +28,7 @@ const services = [
     description: "From answering customer questions to capturing leads, our AI Agents never sleep — helping you stay connected to customers around the clock.",
   },
   {
-    icon: Zap,
+    icon: WorkflowIcon,
     title: "Workflow Automation",
     description: "We connect your apps and eliminate repetitive tasks, so you save hours every week and focus on growing your business.",
   },
@@ -26,7 +45,7 @@ const services = [
 ];
 
 interface ServiceCardProps {
-  icon: FC<LucideProps>;
+  icon: FC<LucideProps> | FC<SVGProps<SVGSVGElement>>;
   title: string;
   description: string;
 }
