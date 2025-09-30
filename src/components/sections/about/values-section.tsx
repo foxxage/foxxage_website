@@ -34,9 +34,9 @@ interface ValueCardProps {
 
 function ValueCard({ icon: Icon, title, description }: ValueCardProps) {
   return (
-    <div className="glass-card animated-outline p-6 rounded-2xl text-center flex flex-col items-center h-full transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10">
+    <div className="group glass-card animated-outline p-6 rounded-2xl text-center flex flex-col items-center h-full transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10">
       <div className="bg-primary/10 p-3 rounded-lg mb-4">
-        <Icon className="h-8 w-8 text-primary" />
+        <Icon className="h-8 w-8 text-primary transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6" />
       </div>
       <h3 className="font-headline text-xl font-semibold mb-2">{title}</h3>
       <p className="text-foreground/70">{description}</p>
