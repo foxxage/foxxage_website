@@ -4,7 +4,7 @@ import { NodeAnimation } from '@/components/node-animation';
 
 export function AboutHeroSection() {
   return (
-    <section className="relative py-16 md:py-20 lg:py-24 text-center overflow-hidden" style={{ background: 'linear-gradient(180deg, #2E2E2E 0%, #0D0D0D 100%)' }}>
+    <section className="relative py-16 md:py-20 lg:py-24 text-center overflow-hidden">
       <div className="absolute inset-0 z-0 opacity-30">
         <NodeAnimation />
       </div>
