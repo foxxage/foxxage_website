@@ -18,7 +18,7 @@ const steps = [
     description: "We deploy the solution and ensure it integrates smoothly.",
   },
   {
-    title: "Iterate",
+    title: "Refine",
     description: "We refine and improve based on your feedback. 2 rounds of revisions included.",
   },
 ];
