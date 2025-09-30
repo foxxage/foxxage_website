@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { NodeAnimation } from '@/components/node-animation';
+import { WorkflowAnimation } from '@/components/workflow-animation';
 
 export function HeroSection() {
   return (
@@ -16,6 +17,7 @@ export function HeroSection() {
           <p className="mt-6 text-lg leading-8 text-foreground/80 sm:text-xl">
             At Foxxage, we design AI Agents and Workflow Automations that work 24/7 — so you can work smarter, not harder.
           </p>
+          <WorkflowAnimation />
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Button size="lg" asChild className="shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-shadow">
               <Link href="#contact">Build My AI Agent</Link>
