@@ -3,14 +3,15 @@
 
 import React, { useEffect, useState } from 'react';
 import { cn } from "@/lib/utils";
-import { ArrowRight, Bot, Wrench, BrainCircuit, CheckCircle } from 'lucide-react';
+import { ArrowRight, Bot, Wrench, BrainCircuit, CheckCircle, Zap } from 'lucide-react';
 
 const desktopNodes = [
   { id: 'start', x: 5, y: 50, label: 'Input', icon: ArrowRight },
   { id: 'qualify', x: 25, y: 50, label: 'AI Agent', icon: Bot },
   { id: 'email', x: 50, y: 25, label: 'Tools', icon: Wrench },
   { id: 'wait', x: 50, y: 75, label: 'Think', icon: BrainCircuit },
-  { id: 'end', x: 85, y: 50, label: 'Output', icon: CheckCircle },
+  { id: 'execute', x: 75, y: 50, label: 'Execute', icon: Zap },
+  { id: 'end', x: 95, y: 50, label: 'Output', icon: CheckCircle },
 ];
 
 const mobileNodes = [
@@ -18,23 +19,26 @@ const mobileNodes = [
   { id: 'qualify', x: 50, y: 30, label: 'AI Agent', icon: Bot },
   { id: 'email', x: 25, y: 50, label: 'Tools', icon: Wrench },
   { id: 'wait', x: 75, y: 50, label: 'Think', icon: BrainCircuit },
-  { id: 'end', x: 50, y: 70, label: 'Output', icon: CheckCircle },
+  { id: 'execute', x: 50, y: 70, label: 'Execute', icon: Zap },
+  { id: 'end', x: 50, y: 90, label: 'Output', icon: CheckCircle },
 ]
 
 const desktopLinks = [
   { source: 'start', target: 'qualify' },
   { source: 'qualify', target: 'email' },
   { source: 'qualify', target: 'wait' },
-  { source: 'email', target: 'end' },
-  { source: 'wait', target: 'end' },
+  { source: 'email', target: 'execute' },
+  { source: 'wait', target: 'execute' },
+  { source: 'execute', target: 'end' },
 ];
 
 const mobileLinks = [
   { source: 'start', target: 'qualify' },
   { source: 'qualify', target: 'email' },
   { source: 'qualify', target: 'wait' },
-  { source: 'email', target: 'end' },
-  { source: 'wait', target: 'end' },
+  { source: 'email', target: 'execute' },
+  { source: 'wait', target: 'execute' },
+  { source: 'execute', target: 'end' },
 ]
 
 export const WorkflowAnimation = () => {
@@ -58,6 +62,8 @@ export const WorkflowAnimation = () => {
       { links: [1, 2] },
       { nodes: ['email', 'wait'] },
       { links: [3, 4] },
+      { nodes: ['execute'] },
+      { links: [5] },
       { nodes: ['end'] },
     ];
 
