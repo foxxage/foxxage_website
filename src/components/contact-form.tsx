@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useForm } from "react-hook-form";
@@ -109,7 +110,7 @@ export function ContactForm() {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Message</FormLabel>
+              <FormLabel>Message (Optional)</FormLabel>
               <FormControl>
                 <Textarea placeholder="How can we help you automate?" {...field} rows={4} />
               </FormControl>
