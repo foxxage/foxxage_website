@@ -8,7 +8,7 @@ import { Bot, Search, DatabaseZap, BarChart3, MessageSquare } from 'lucide-react
 const centerNode = { id: 'agent', label: 'AI Agent', icon: Bot, x: 50, y: 50 };
 
 const tasks = [
-  { id: 'research', label: 'Research', icon: Search, x: 50, y: 10 },
+  { id: 'research', label: 'Researching', icon: Search, x: 50, y: 10 },
   { id: 'crm', label: 'Updating CRM', icon: DatabaseZap, x: 90, y: 50 },
   { id: 'reports', label: 'Generating Reports', icon: BarChart3, x: 50, y: 90 },
   { id: 'chat', label: 'Chatting', icon: MessageSquare, x: 10, y: 50 },
