@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from 'react';
-import { cn } from '@/lib/utils';
 
 const Node = ({ id, style }: { id: number; style: React.CSSProperties }) => {
   return (
