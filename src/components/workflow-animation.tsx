@@ -49,9 +49,7 @@ export const WorkflowAnimation = () => {
         }));
         step++;
       } else {
-        // Reset animation
-        step = 0;
-        setVisibleElements({ nodes: [], links: [] });
+        clearInterval(interval);
       }
     }, 1000);
 
