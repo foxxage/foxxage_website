@@ -1,9 +1,10 @@
+
 import { ContactForm } from "@/components/contact-form";
 import { Mail, MessageCircle } from "lucide-react";
 
 const contactInfo = [
   { icon: Mail, text: "hi@foxxage.com", href: "mailto:hi@foxxage.com" },
-  { icon: MessageCircle, text: "+91-9031998319", href: "https://wa.me/919031998319" },
+  { icon: MessageCircle, text: "+91-90319-98319", href: "https://wa.me/919031998319" },
 ];
 
 export function ContactSection() {
