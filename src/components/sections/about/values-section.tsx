@@ -22,7 +22,7 @@ const values = [
   {
     icon: Handshake,
     title: "Data Safety",
-    description: "Human support + precise engineering.",
+    description: "Your information stays secure, always.",
   },
 ];
 
