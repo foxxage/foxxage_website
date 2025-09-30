@@ -112,12 +112,17 @@ export default {
           '75%': { transform: 'translateY(20px) translateX(0px) scale(0.9)', opacity: 0.5 },
           '100%': { transform: 'translateY(0px) translateX(0px) scale(1)', opacity: 0.7 },
         },
+        'dash': {
+          'from': { 'stroke-dashoffset': '100' },
+          'to': { 'stroke-dashoffset': '0' },
+        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'fade-in-up': 'fade-in-up 0.5s ease-out',
         'node-float': 'node-float 15s ease-in-out infinite',
+        'dash': 'dash 1.5s linear infinite',
       },
     },
   },
