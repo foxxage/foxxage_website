@@ -1,3 +1,4 @@
+"use client";
 
 import { BotMessageSquare, Link as LinkIcon, BarChartBig } from "lucide-react";
 import type { LucideProps } from "lucide-react";
@@ -27,21 +28,25 @@ const services = [
     icon: BotMessageSquare,
     title: "Custom AI Agents",
     description: "From answering customer questions to capturing leads, our AI Agents never sleep — helping you stay connected to customers around the clock.",
+    id: "agents",
   },
   {
     icon: WorkflowIcon,
     title: "Workflow Automation",
     description: "We connect your apps and eliminate repetitive tasks, so you save hours every week and focus on growing your business.",
+    id: "automation",
   },
   {
     icon: LinkIcon,
     title: "Seamless Integrations",
     description: "WhatsApp, CRM, Google Sheets, Slack, HubSpot, Email — we make them work together in one smooth, connected system.",
+    id: "integrations",
   },
   {
     icon: BarChartBig,
     title: "Smart Insights",
     description: "Get clear, automated reports and insights so you know exactly what’s working and where to focus next.",
+    id: "insights",
   },
 ];
 
@@ -49,9 +54,10 @@ interface ServiceCardProps {
   icon: FC<LucideProps> | FC<SVGProps<SVGSVGElement>>;
   title: string;
   description: string;
+  id: string;
 }
 
-function ServiceCard({ icon: Icon, title, description }: ServiceCardProps) {
+function ServiceCard({ icon: Icon, title, description, id }: ServiceCardProps) {
   return (
     <div className="group glass-card animated-outline p-6 rounded-2xl flex flex-col items-start h-full transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10">
       <div className="bg-primary/10 p-3 rounded-lg mb-4">
@@ -74,7 +80,7 @@ export function ServicesSection() {
           </h2>
           <p className="mt-4 text-lg text-foreground/70">What we do to help you grow.</p>
         </div>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {services.map((service) => (
             <ServiceCard key={service.title} {...service} />
           ))}
