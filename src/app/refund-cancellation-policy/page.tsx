@@ -9,6 +9,7 @@ export default function RefundCancellationPolicyPage() {
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="max-w-4xl mx-auto prose dark:prose-invert">
           <h1 className="font-bold">Refund & Cancellation Policy</h1>
+          <br />
           <p>Effective Date: 2nd October, 2025</p>
           <br />
           <p>At Foxxage, we provide AI agents and workflow automation services. This Refund & Cancellation Policy explains how clients can cancel services and under what conditions refunds may be issued.</p>
