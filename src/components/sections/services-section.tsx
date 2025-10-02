@@ -85,23 +85,22 @@ interface ServiceCardProps {
 
 function ServiceCard({ icon: Icon, title, description, details }: ServiceCardProps) {
   return (
-    <div className="group/service-card relative glass-card animated-outline p-8 rounded-2xl flex flex-col items-start h-full transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10 overflow-hidden">
+    <div className="group/service-card glass-card animated-outline p-8 rounded-2xl flex flex-col items-start h-full transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10">
       <div className="mb-4">
         <Icon className="h-8 w-8 text-primary transition-transform duration-300 group-hover/service-card:scale-110 group-hover/service-card:-rotate-6" />
       </div>
       <h3 className="font-headline text-xl font-semibold mb-2">{title}</h3>
       
-      <div className="relative w-full flex-grow">
-        <p className="text-foreground/70 flex-grow transition-opacity duration-300 group-hover/service-card:opacity-0">
-          {description}
-        </p>
-        <div className="absolute inset-0 transition-opacity duration-300 opacity-0 group-hover/service-card:opacity-100">
-          <ul className="space-y-2 text-foreground/80 list-disc pl-5">
-            {details.map((detail, index) => (
-              <li key={index}>{detail}</li>
-            ))}
-          </ul>
-        </div>
+      <p className="text-foreground/70 transition-opacity duration-300 group-hover/service-card:opacity-0 group-hover/service-card:h-0 group-hover/service-card:mb-0 mb-4 h-auto">
+        {description}
+      </p>
+
+      <div className="transition-all duration-300 opacity-0 max-h-0 group-hover/service-card:opacity-100 group-hover/service-card:max-h-96">
+        <ul className="space-y-2 text-foreground/80 list-disc pl-5">
+          {details.map((detail, index) => (
+            <li key={index}>{detail}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );
