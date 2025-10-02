@@ -4,13 +4,6 @@
 import { BotMessageSquare, Link as LinkIcon, BarChartBig } from "lucide-react";
 import type { LucideProps } from "lucide-react";
 import type { FC, SVGProps } from "react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { ChevronDown } from "lucide-react";
 
 const WorkflowIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
@@ -59,7 +52,7 @@ const services = [
   {
     icon: LinkIcon,
     title: "Seamless Integrations",
-    description: "WhatsApp, CRM, Google Sheets, Slack, HubSpot, Email — we make them work together in one smooth, connected system.",
+    description: "We make your tools — WhatsApp, CRM, Google Sheets, Slack, HubSpot, Email — work together in one smooth, connected system.",
     details: [
         "Connect your CRM (HubSpot, Salesforce, etc.)",
         "Integrate with Google Workspace (Sheets, Docs, Gmail)",
@@ -90,28 +83,25 @@ interface ServiceCardProps {
   id: string;
 }
 
-function ServiceCard({ icon: Icon, title, description, details, id }: ServiceCardProps) {
+function ServiceCard({ icon: Icon, title, description, details }: ServiceCardProps) {
   return (
-    <div className="group/service-card relative glass-card animated-outline p-6 rounded-2xl flex flex-col items-start h-full transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10 overflow-hidden">
-      <div className="relative z-10 transition-all duration-300">
-        <div className="bg-primary/10 p-3 rounded-lg mb-4">
-          <Icon className="h-8 w-8 text-primary transition-transform duration-300 group-hover/service-card:scale-110 group-hover/service-card:-rotate-6" />
-        </div>
-        <h3 className="font-headline text-xl font-semibold mb-2">{title}</h3>
-        <p className="text-foreground/70 flex-grow">{description}</p>
+    <div className="group/service-card relative glass-card animated-outline p-8 rounded-2xl flex flex-col items-start h-full transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10 overflow-hidden">
+      <div className="mb-4">
+        <Icon className="h-8 w-8 text-primary transition-transform duration-300 group-hover/service-card:scale-110 group-hover/service-card:-rotate-6" />
       </div>
+      <h3 className="font-headline text-xl font-semibold mb-2">{title}</h3>
       
-      <div className="absolute inset-0 top-auto z-0 p-6 pt-0 transition-all duration-300 ease-in-out opacity-0 group-hover/service-card:opacity-100 transform translate-y-4 group-hover/service-card:translate-y-0 h-full flex flex-col justify-end">
-          <div className="transition-all duration-300 h-full overflow-hidden flex flex-col justify-end">
-            <div className="bg-gradient-to-t from-background via-background/80 to-transparent absolute inset-x-0 bottom-0 h-full group-hover/service-card:h-full transition-all duration-300"></div>
-             <div className="relative z-10">
-                <ul className="space-y-2 text-foreground/80 list-disc pl-5">
-                {details.map((detail, index) => (
-                    <li key={index}>{detail}</li>
-                ))}
-                </ul>
-             </div>
-          </div>
+      <div className="relative w-full flex-grow">
+        <p className="text-foreground/70 flex-grow transition-opacity duration-300 group-hover/service-card:opacity-0">
+          {description}
+        </p>
+        <div className="absolute inset-0 transition-opacity duration-300 opacity-0 group-hover/service-card:opacity-100">
+          <ul className="space-y-2 text-foreground/80 list-disc pl-5">
+            {details.map((detail, index) => (
+              <li key={index}>{detail}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
