@@ -1,9 +1,10 @@
 
-import { Mail, Instagram, MessageCircle, Bot, Sheet } from 'lucide-react';
+import { Mail, Instagram, MessageCircle, Bot, Sheet, Calculator, Calendar } from 'lucide-react';
 import type { SVGProps } from 'react';
 
 const Telegram = (props: SVGProps<SVGSVGElement>) => <svg {...props} viewBox="0 0 24 24"><path fill="currentColor" d="M9.78 18.65l.28-4.23l7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3L3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.58c-.28 1.13-1.04 1.4-1.74.88l-4.98-3.65l-2.33 2.22c-.24.24-.45.46-.8.46z" /></svg>;
-
+const Discord = (props: SVGProps<SVGSVGElement>) => <svg {...props} viewBox="0 0 24 24"><path fill="currentColor" d="M20.3,3.3c-1.2-0.8-2.6-1.4-4-1.8c-0.2,0.5-0.4,1-0.6,1.5c-1.8-0.4-3.6-0.4-5.4,0C10.1,3,9.8,2.5,9.6,2c-1.5,0.4-2.9,1-4.1,1.8C2.8,7.9,1.6,13.2,3.3,18c1.8,2.9,4.8,4.8,8.2,5.5c1.4,0.3,2.8,0.3,4.2,0c3.4-0.7,6.4-2.6,8.2-5.5C25.6,13.2,24.5,7.9,20.3,3.3z M9.6,15.9c-0.9,0-1.7-0.8-1.7-1.8c0-1,0.8-1.8,1.7-1.8c0.9,0,1.7,0.8,1.7,1.8C11.3,15.1,10.5,15.9,9.6,15.9z M15.7,15.9c-0.9,0-1.7-0.8-1.7-1.8c0-1,0.8-1.8,1.7-1.8c0.9,0,1.7,0.8,1.7,1.8C17.4,15.1,16.6,15.9,15.7,15.9z"/></svg>;
+const Bitly = (props: SVGProps<SVGSVGElement>) => <svg {...props} viewBox="0 0 24 24"><path fill="currentColor" d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M11.5,6.5L11.5,11.5H16.5V13H11.5L11.5,17.5H10V13H7V11.5H10V6.5H11.5Z" /></svg>;
 
 const logos = [
     { icon: Instagram, name: 'Instagram' },
@@ -12,6 +13,10 @@ const logos = [
     { icon: Sheet, name: 'Google Sheet' },
     { icon: Mail, name: 'Gmail' },
     { icon: Bot, name: 'ChatGPT' },
+    { icon: Calendar, name: 'Google Calendar' },
+    { icon: Bitly, name: 'Bitly' },
+    { icon: Discord, name: 'Discord' },
+    { icon: Calculator, name: 'Calculator' },
 ];
 
 export function IntegrationsSection() {
