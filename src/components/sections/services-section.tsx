@@ -2,7 +2,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { BotMessageSquare, Link as LinkIcon, BarChartBig } from "lucide-react";
+import { BotMessageSquare, Link as LinkIcon, BarChartBig, ChevronDown } from "lucide-react";
 import type { LucideProps } from "lucide-react";
 import type { FC, SVGProps } from "react";
 import { cn } from "@/lib/utils";
@@ -96,9 +96,16 @@ function ServiceCard({ icon: Icon, title, description, details, isOpen, onClick 
       )}
       onClick={onClick}
     >
-      <div className="mb-4">
+      <div className="w-full flex justify-between items-start mb-4">
         <Icon className="h-8 w-8 text-primary transition-transform duration-300 group-hover/service-card:scale-110 group-hover/service-card:-rotate-6" />
+        <ChevronDown 
+          className={cn(
+            "h-6 w-6 text-foreground/50 transition-transform duration-300",
+            isOpen && "rotate-180 text-primary"
+          )} 
+        />
       </div>
+
       <h3 className="font-headline text-xl font-semibold mb-2">{title}</h3>
       
       <div className={cn("grid transition-[grid-template-rows] duration-500 ease-in-out", isOpen ? "grid-rows-[0fr]" : "grid-rows-[1fr]")}>
