@@ -3,6 +3,13 @@
 import { BotMessageSquare, Link as LinkIcon, BarChartBig } from "lucide-react";
 import type { LucideProps } from "lucide-react";
 import type { FC, SVGProps } from "react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { ChevronDown } from "lucide-react";
 
 const WorkflowIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
@@ -28,24 +35,48 @@ const services = [
     icon: BotMessageSquare,
     title: "Custom AI Agents",
     description: "From answering customer questions to capturing leads, our AI Agents never sleep — helping you stay connected to customers around the clock.",
+    details: [
+      "24/7 Lead Capture & Qualification",
+      "Instant Customer Support on WhatsApp, Web, etc.",
+      "Automated Appointment Booking",
+      "Personalized Product Recommendations"
+    ],
     id: "agents",
   },
   {
     icon: WorkflowIcon,
     title: "Workflow Automation",
     description: "We connect your apps and eliminate repetitive tasks, so you save hours every week and focus on growing your business.",
+    details: [
+        "Automated Data Entry & Syncing",
+        "Streamlined Onboarding Processes",
+        "Automated Reporting & Notifications",
+        "Sales & Marketing Funnel Automation"
+    ],
     id: "automation",
   },
   {
     icon: LinkIcon,
     title: "Seamless Integrations",
     description: "WhatsApp, CRM, Google Sheets, Slack, HubSpot, Email — we make them work together in one smooth, connected system.",
+    details: [
+        "Connect your CRM (HubSpot, Salesforce, etc.)",
+        "Integrate with Google Workspace (Sheets, Docs, Gmail)",
+        "Link Communication Tools (Slack, WhatsApp, Telegram)",
+        "Custom API integrations for any of your tools"
+    ],
     id: "integrations",
   },
   {
     icon: BarChartBig,
     title: "Smart Insights",
     description: "Get clear, automated reports and insights so you know exactly what’s working and where to focus next.",
+    details: [
+        "Automated Sales & Performance Dashboards",
+        "Real-time Customer Feedback Analysis",
+        "Lead Source & Conversion Tracking",
+        "Cost & ROI Monitoring on Autopilot"
+    ],
     id: "insights",
   },
 ];
@@ -54,10 +85,11 @@ interface ServiceCardProps {
   icon: FC<LucideProps> | FC<SVGProps<SVGSVGElement>>;
   title: string;
   description: string;
+  details: string[];
   id: string;
 }
 
-function ServiceCard({ icon: Icon, title, description, id }: ServiceCardProps) {
+function ServiceCard({ icon: Icon, title, description, details, id }: ServiceCardProps) {
   return (
     <div className="group glass-card animated-outline p-6 rounded-2xl flex flex-col items-start h-full transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10">
       <div className="bg-primary/10 p-3 rounded-lg mb-4">
@@ -65,6 +97,22 @@ function ServiceCard({ icon: Icon, title, description, id }: ServiceCardProps) {
       </div>
       <h3 className="font-headline text-xl font-semibold mb-2">{title}</h3>
       <p className="text-foreground/70 flex-grow">{description}</p>
+      
+      <Accordion type="single" collapsible className="w-full mt-4">
+        <AccordionItem value="item-1" className="border-b-0">
+          <AccordionTrigger className="text-sm font-semibold text-primary hover:no-underline [&[data-state=open]>svg]:rotate-180 py-2">
+            Show more
+            <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
+          </AccordionTrigger>
+          <AccordionContent className="pt-2">
+            <ul className="space-y-2 text-foreground/70 list-disc pl-5">
+              {details.map((detail, index) => (
+                <li key={index}>{detail}</li>
+              ))}
+            </ul>
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
     </div>
   );
 }
