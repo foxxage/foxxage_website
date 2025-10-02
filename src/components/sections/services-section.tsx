@@ -101,16 +101,20 @@ function ServiceCard({ icon: Icon, title, description, details, isOpen, onClick 
       </div>
       <h3 className="font-headline text-xl font-semibold mb-2">{title}</h3>
       
-      <div className={cn("transition-all duration-300", isOpen ? "opacity-0 max-h-0" : "opacity-100 max-h-96")}>
-        <p className="text-foreground/70 mb-4">{description}</p>
+      <div className={cn("grid transition-[grid-template-rows] duration-500 ease-in-out", isOpen ? "grid-rows-[0fr]" : "grid-rows-[1fr]")}>
+         <div className="overflow-hidden">
+            <p className="text-foreground/70 mb-4">{description}</p>
+         </div>
       </div>
 
-      <div className={cn("transition-all duration-300 overflow-hidden", isOpen ? "opacity-100 max-h-96" : "opacity-0 max-h-0")}>
-        <ul className="space-y-2 text-foreground/80 list-disc pl-5">
-          {details.map((detail, index) => (
-            <li key={index}>{detail}</li>
-          ))}
-        </ul>
+      <div className={cn("grid transition-[grid-template-rows] duration-500 ease-in-out", isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]")}>
+        <div className="overflow-hidden">
+          <ul className="space-y-2 text-foreground/80 list-disc pl-5 pt-2">
+            {details.map((detail, index) => (
+              <li key={index}>{detail}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
