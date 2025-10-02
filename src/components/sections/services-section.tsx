@@ -1,3 +1,4 @@
+
 "use client";
 
 import { BotMessageSquare, Link as LinkIcon, BarChartBig } from "lucide-react";
@@ -91,28 +92,27 @@ interface ServiceCardProps {
 
 function ServiceCard({ icon: Icon, title, description, details, id }: ServiceCardProps) {
   return (
-    <div className="group glass-card animated-outline p-6 rounded-2xl flex flex-col items-start h-full transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10">
-      <div className="bg-primary/10 p-3 rounded-lg mb-4">
-        <Icon className="h-8 w-8 text-primary transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6" />
+    <div className="group/service-card relative glass-card animated-outline p-6 rounded-2xl flex flex-col items-start h-full transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10 overflow-hidden">
+      <div className="relative z-10 transition-all duration-300">
+        <div className="bg-primary/10 p-3 rounded-lg mb-4">
+          <Icon className="h-8 w-8 text-primary transition-transform duration-300 group-hover/service-card:scale-110 group-hover/service-card:-rotate-6" />
+        </div>
+        <h3 className="font-headline text-xl font-semibold mb-2">{title}</h3>
+        <p className="text-foreground/70 flex-grow">{description}</p>
       </div>
-      <h3 className="font-headline text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-foreground/70 flex-grow">{description}</p>
       
-      <Accordion type="single" collapsible className="w-full mt-4">
-        <AccordionItem value="item-1" className="border-b-0">
-          <AccordionTrigger className="text-sm font-semibold text-primary hover:no-underline [&[data-state=open]>svg]:rotate-180 py-2">
-            Show more
-            <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
-          </AccordionTrigger>
-          <AccordionContent className="pt-2">
-            <ul className="space-y-2 text-foreground/70 list-disc pl-5">
-              {details.map((detail, index) => (
-                <li key={index}>{detail}</li>
-              ))}
-            </ul>
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+      <div className="absolute inset-0 top-auto z-0 p-6 pt-0 transition-all duration-300 ease-in-out opacity-0 group-hover/service-card:opacity-100 transform translate-y-4 group-hover/service-card:translate-y-0 h-full flex flex-col justify-end">
+          <div className="transition-all duration-300 h-full overflow-hidden flex flex-col justify-end">
+            <div className="bg-gradient-to-t from-background via-background/80 to-transparent absolute inset-x-0 bottom-0 h-full group-hover/service-card:h-full transition-all duration-300"></div>
+             <div className="relative z-10">
+                <ul className="space-y-2 text-foreground/80 list-disc pl-5">
+                {details.map((detail, index) => (
+                    <li key={index}>{detail}</li>
+                ))}
+                </ul>
+             </div>
+          </div>
+      </div>
     </div>
   );
 }
