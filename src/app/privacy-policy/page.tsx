@@ -17,6 +17,7 @@ export default function PrivacyPolicyPage() {
           <p>Foxxage (“Foxxage,” “we,” “us,” or “our”) provides: Workflow automation and AI agent services (“Service”).</p>
           <br />
           <p>This Privacy Policy explains how we collect, use, store, and share your personal data when you use our Service.</p>
+          <br />
           <p>Unless otherwise defined, terms in this Privacy Policy have the same meaning as in our Terms and Conditions.</p>
 
           <br />
