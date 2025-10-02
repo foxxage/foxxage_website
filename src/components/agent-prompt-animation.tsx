@@ -5,9 +5,9 @@ import { Bot, Sparkles } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const prompts = [
+  "Where can I save you time today?",
   "Spending too much time on repetitive tasks?",
   "Is customer follow-up eating your day?",
-  "Where can I save you time today?",
   "Switching between too many apps?",
   "Paying more staff just to handle routine work?"
 ];
