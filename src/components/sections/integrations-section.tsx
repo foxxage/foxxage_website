@@ -16,7 +16,6 @@ const XIcon = (props: SVGProps<SVGSVGElement>) => (
       />
     </svg>
   );
-const GoogleMyBusiness = (props: SVGProps<SVGSVGElement>) => <svg {...props} viewBox="0 0 24 24"><path fill="currentColor" d="M21.94 7.64h-9.35l-2.43 4.33l-2.9-2.9v-1.43h6.29V5.21H7.86l-2.65 2.65L3.4 6.04l2.64-2.65h11.1L21.94 7.64M18.5 8.9v8.34h-1.25V8.9Zm-2.5 0v8.34h-1.25V8.9Zm-2.5 0v5.84h-1.25V8.9Zm-2.5 0v5h-1.25V8.9Z"/></svg>;
 
 const logos = [
     { icon: Instagram, name: 'Instagram' },
@@ -31,7 +30,6 @@ const logos = [
     { icon: Linkedin, name: 'LinkedIn' },
     { icon: XIcon, name: 'X.com' },
     { icon: MapPin, name: 'Google Maps'},
-    { icon: GoogleMyBusiness, name: 'Google My Business'},
 ];
 
 export function IntegrationsSection() {
