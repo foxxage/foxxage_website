@@ -44,6 +44,7 @@ export default function PrivacyPolicyPage() {
           <p>v) Workflow & Service Data: information related to workflows, AI agent configurations, and platform interactions</p>
           <br />
           <p>We also collect aggregated or anonymized data for analysis, optimization, and research purposes.</p>
+          <br />
           <p>Children’s Data: Our Service is not intended for individuals under 13, and we do not knowingly collect information from children.</p>
 
           <br />
