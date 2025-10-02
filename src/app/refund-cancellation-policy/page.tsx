@@ -16,49 +16,49 @@ export default function RefundCancellationPolicyPage() {
           <br />
           <h2><strong>1. Service Subscriptions</strong></h2>
           <ul>
-            <li>i) All services are provided on a subscription or project basis as agreed with the client.</li>
-            <li>ii) Subscriptions renew automatically unless canceled prior to the next billing cycle.</li>
-            <li>iii) Clients are responsible for payments for all active subscriptions or projects.</li>
+            <li className="py-2">i) All services are provided on a subscription or project basis as agreed with the client.</li>
+            <li className="py-2">ii) Subscriptions renew automatically unless canceled prior to the next billing cycle.</li>
+            <li className="py-2">iii) Clients are responsible for payments for all active subscriptions or projects.</li>
           </ul>
           <br />
           <h2><strong>2. Cancellation Policy</strong></h2>
           <ul>
-            <li>i) Before Service Start: Clients may cancel a service or project before work begins without any charges.</li>
-            <li>ii) After Service Start: If work has commenced, partial or full charges may apply depending on the effort already performed.</li>
-            <li>iii) Cancellation requests must be submitted via email to hi@foxxage.com.</li>
+            <li className="py-2">i) Before Service Start: Clients may cancel a service or project before work begins without any charges.</li>
+            <li className="py-2">ii) After Service Start: If work has commenced, partial or full charges may apply depending on the effort already performed.</li>
+            <li className="py-2">iii) Cancellation requests must be submitted via email to hi@foxxage.com.</li>
           </ul>
           <br />
           <h2><strong>3. Refund Policy</strong></h2>
           <ul>
-            <li>i) All fees are non-refundable unless otherwise stated.</li>
-            <li>i) Refunds may be considered only in exceptional circumstances, such as:
+            <li className="py-2">i) All fees are non-refundable unless otherwise stated.</li>
+            <li className="py-2">i) Refunds may be considered only in exceptional circumstances, such as:
               <ul>
-                <li>- Failure of Foxxage to deliver the services as per the agreed scope.</li>
-                <li>- Material breach of contract by Foxxage.</li>
+                <li className="py-2">- Failure of Foxxage to deliver the services as per the agreed scope.</li>
+                <li className="py-2">- Material breach of contract by Foxxage.</li>
               </ul>
             </li>
-            <li>iii) Refunds, if approved, will be processed to the original payment method within a reasonable time frame.</li>
+            <li className="py-2">iii) Refunds, if approved, will be processed to the original payment method within a reasonable time frame.</li>
           </ul>
           <br />
           <h2><strong>4. Modifications & Service Changes</strong></h2>
           <ul>
-            <li>i) Clients may request modifications to the service or project.</li>
-            <li>ii) Changes may affect timelines and fees.</li>
-            <li>iii) Refunds will not be provided for delays or additional work resulting from client-requested modifications.</li>
+            <li className="py-2">i) Clients may request modifications to the service or project.</li>
+            <li className="py-2">ii) Changes may affect timelines and fees.</li>
+            <li className="py-2">iii) Refunds will not be provided for delays or additional work resulting from client-requested modifications.</li>
           </ul>
           <br />
           <h2><strong>5. Force Majeure & Delays</strong></h2>
-            <p>i) Foxxage is not liable for delays caused by events beyond our reasonable control, including but not limited to:</p>
+            <p className="py-2">i) Foxxage is not liable for delays caused by events beyond our reasonable control, including but not limited to:</p>
             <ul>
-              <li>- Client delays in providing required information</li>
-              <li>- Technical or connectivity issues</li>
-              <li>- Acts of God, natural disasters, or government restrictions</li>
+              <li className="py-2">- Client delays in providing required information</li>
+              <li className="py-2">- Technical or connectivity issues</li>
+              <li className="py-2">- Acts of God, natural disasters, or government restrictions</li>
             </ul>
           <br />
           <h2><strong>6. Contact for Refunds & Cancellations</strong></h2>
-          <p>To request cancellation or discuss potential refunds, please contact:</p>
-          <p>Email: info@foxxage.com</p>
-          <p>Foxxage will review all requests and respond in a timely manner.</p>
+          <p className="py-2">To request cancellation or discuss potential refunds, please contact:</p>
+          <p className="py-2">Email: info@foxxage.com</p>
+          <p className="py-2">Foxxage will review all requests and respond in a timely manner.</p>
         </div>
       </main>
       <Footer />
