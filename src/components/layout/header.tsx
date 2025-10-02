@@ -76,12 +76,6 @@ export function Header() {
                 <div className="flex h-full flex-col p-6">
                   <div className="flex items-center justify-between">
                     <Logo />
-                    <SheetTrigger asChild>
-                       <Button variant="ghost" size="icon">
-                        <X className="h-6 w-6" />
-                        <span className="sr-only">Close menu</span>
-                      </Button>
-                    </SheetTrigger>
                   </div>
                   <nav className="mt-8 flex flex-col space-y-4">
                     {navItems.map((item) => (
@@ -97,7 +91,7 @@ export function Header() {
                   </nav>
                   <div className="mt-auto">
                     <Button asChild className="w-full animated-outline">
-                       <Link href="#contact">Build My AI Agent</Link>
+                       <Link href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Build My AI Agent</Link>
                     </Button>
                   </div>
                 </div>
