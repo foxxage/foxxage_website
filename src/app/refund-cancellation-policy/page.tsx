@@ -9,64 +9,55 @@ export default function RefundCancellationPolicyPage() {
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="max-w-4xl mx-auto prose dark:prose-invert">
           <h1 className="font-bold">Refund & Cancellation Policy</h1>
+          <p>Effective Date: 2nd October, 2025</p>
           <br />
-          <p>Effective Date: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+          <p>At Foxxage, we provide AI agents and workflow automation services. This Refund & Cancellation Policy explains how clients can cancel services and under what conditions refunds may be issued.</p>
           <br />
-          <p>At Foxxage, we work hard to deliver high-quality AI Agents and workflow automation solutions. This policy explains how cancellations and refunds work when you purchase our services.</p>
-
-          <br />
-
-          <h2><strong>1. Cancellations</strong></h2>
-          <br />
+          <h2><strong>1. Service Subscriptions</strong></h2>
           <ul>
-            <li><strong>Before Work Begins:</strong> You may cancel your project before we start working on it for a full refund.</li>
-            <br />
-            <li><strong>After Work Has Started:</strong> If work has already begun, we may deduct a portion of the payment for the work already completed.</li>
-            <br />
-            <li><strong>After Delivery:</strong> Once we deliver the completed solution, cancellations are no longer accepted.</li>
-          </ul>
-
-          <br />
-
-          <h2><strong>2. Refunds</strong></h2>
-          <br />
-          <p><strong>Refunds may be issued in the following cases:</strong></p>
-          <ul>
-            <li>Project is cancelled before work begins → 100% refund.</li>
-            <li>Project is partially completed → pro-rated refund based on percentage of work done.</li>
-            <li>If we are unable to deliver the agreed solution due to technical reasons on our end, you will receive a full refund.</li>
+            <li>i) All services are provided on a subscription or project basis as agreed with the client.</li>
+            <li>ii) Subscriptions renew automatically unless canceled prior to the next billing cycle.</li>
+            <li>iii) Clients are responsible for payments for all active subscriptions or projects.</li>
           </ul>
           <br />
-          <p><strong>Refunds are not provided for:</strong></p>
+          <h2><strong>2. Cancellation Policy</strong></h2>
           <ul>
-            <li>Change of mind after delivery.</li>
-            <li>Client delays, missing information, or failure to provide required inputs.</li>
-            <li>Custom integrations or third-party costs already incurred on your behalf.</li>
-          </ul>
-
-          <br />
-
-          <h2><strong>3. Revisions</strong></h2>
-          <br />
-          <p>We offer revisions according to the agreed project scope. Additional revisions or changes outside the original scope may incur extra charges.</p>
-
-          <br />
-
-          <h2><strong>4. How to Request a Refund or Cancellation</strong></h2>
-          <br />
-          <p>To request a refund or cancel a project:</p>
-          <ul>
-            <li>📩 Email: hi@foxxage.com</li>
-            <li>📞 WhatsApp: +91-90319-98319</li>
+            <li>i) Before Service Start: Clients may cancel a service or project before work begins without any charges.</li>
+            <li>ii) After Service Start: If work has commenced, partial or full charges may apply depending on the effort already performed.</li>
+            <li>iii) Cancellation requests must be submitted via email to hi@foxxage.com.</li>
           </ul>
           <br />
-          <p>We will review your request and process eligible refunds within 7-10 business days.</p>
-          
+          <h2><strong>3. Refund Policy</strong></h2>
+          <ul>
+            <li>i) All fees are non-refundable unless otherwise stated.</li>
+            <li>i) Refunds may be considered only in exceptional circumstances, such as:
+              <ul>
+                <li>- Failure of Foxxage to deliver the services as per the agreed scope.</li>
+                <li>- Material breach of contract by Foxxage.</li>
+              </ul>
+            </li>
+            <li>iii) Refunds, if approved, will be processed to the original payment method within a reasonable time frame.</li>
+          </ul>
           <br />
-
-          <h2><strong>5. Disputes</strong></h2>
+          <h2><strong>4. Modifications & Service Changes</strong></h2>
+          <ul>
+            <li>i) Clients may request modifications to the service or project.</li>
+            <li>ii) Changes may affect timelines and fees.</li>
+            <li>iii) Refunds will not be provided for delays or additional work resulting from client-requested modifications.</li>
+          </ul>
           <br />
-          <p>If you are dissatisfied with the service, contact us first so we can resolve the issue. We value fair, friendly solutions and will do our best to make things right.</p>
+          <h2><strong>5. Force Majeure & Delays</strong></h2>
+            <p>i) Foxxage is not liable for delays caused by events beyond our reasonable control, including but not limited to:</p>
+            <ul>
+              <li>- Client delays in providing required information</li>
+              <li>- Technical or connectivity issues</li>
+              <li>- Acts of God, natural disasters, or government restrictions</li>
+            </ul>
+          <br />
+          <h2><strong>6. Contact for Refunds & Cancellations</strong></h2>
+          <p>To request cancellation or discuss potential refunds, please contact:</p>
+          <p>Email: info@foxxage.com</p>
+          <p>Foxxage will review all requests and respond in a timely manner.</p>
         </div>
       </main>
       <Footer />
