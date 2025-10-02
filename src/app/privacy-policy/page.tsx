@@ -10,72 +10,95 @@ export default function PrivacyPolicyPage() {
         <div className="max-w-4xl mx-auto prose dark:prose-invert">
           <h1 className="font-bold">Privacy Policy</h1>
           <br />
-          <p>Effective Date: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+          <p>Effective Date: 2nd October, 2025</p>
           <br />
-          <p>At Foxxage, your privacy matters to us. This Privacy Policy explains what data we collect, how we use it, and how we keep it safe when you visit our website or use our services.</p>
+          <p>Welcome to Foxxage’s Privacy Policy (“Privacy Policy”).</p>
+          <p>Foxxage (“Foxxage,” “we,” “us,” or “our”) provides: Workflow automation and AI agent services (“Service”).</p>
+          <p>This Privacy Policy explains how we collect, use, store, and share your personal data when you use our Service.</p>
+          <p>Unless otherwise defined, terms in this Privacy Policy have the same meaning as in our Terms and Conditions.</p>
 
           <br />
+          <h2><strong>1. Application of this Privacy Policy</strong></h2>
+          <p>i) When we process personal data strictly on our clients’ instructions, we act as a data processor. You should review the client’s privacy policies for how they handle your data.</p>
+          <p>ii) When we collect data directly through our Platform or Services, we act as a data controller and are responsible for how your personal data is processed.</p>
+          <p>iii) By using our Service, you consent to the collection, use, storage, and sharing of your personal data as described in this Privacy Policy.</p>
 
-          <h2><strong>1. Information We Collect</strong></h2>
           <br />
-          <p>We may collect:</p>
-          <ul>
-            <li><strong>Personal Information:</strong> Name, email address, phone number, or other details you voluntarily submit through our contact form or when booking a service.</li>
-            <li><strong>Usage Data:</strong> Information about how you use our website (pages visited, time on site, device information, IP address) to improve our services.</li>
-            <li><strong>Cookies & Tracking:</strong> We may use cookies to enhance your experience, remember preferences, and analyze website traffic.</li>
-          </ul>
-          <br />
+          <h2><strong>2. Personal Data We Collect</strong></h2>
+          <p>We collect personal data necessary to provide AI agents and workflow automation, including:</p>
+          <p>i) Identity Data: user name, business name</p>
+          <p>ii) Contact Data: email address, phone number</p>
+          <p>iii) Business Details: business address, APIs, business-specific personal information</p>
+          <p>iv) Technical Data: device information, browser type, IP address, usage data</p>
+          <p>v) Workflow & Service Data: information related to workflows, AI agent configurations, and platform interactions</p>
+          <p>We also collect aggregated or anonymized data for analysis, optimization, and research purposes.</p>
+          <p>Children’s Data: Our Service is not intended for individuals under 13, and we do not knowingly collect information from children.</p>
 
-          <h2><strong>2. How We Use Your Information</strong></h2>
           <br />
-          <p>We use your information to:</p>
-          <ul>
-            <li>Provide and improve our services</li>
-            <li>Respond to your inquiries or support requests</li>
-            <li>Send relevant updates, if you opted in</li>
-            <li>Analyze usage patterns to optimize website performance</li>
-          </ul>
-          <p>We never sell, trade, or rent your personal information to third parties.</p>
-          <br />
+          <h2><strong>3. How We Collect Data</strong></h2>
+          <p>We collect data through:</p>
+          <p>i) Direct Interactions: when you provide data while using our Platform, creating AI agents, integrating APIs, or contacting support.</p>
+          <p>ii) Automated Technologies: cookies, server logs, or analytics tools to capture technical and usage data.</p>
+          <p>iii) Third Parties: data may come from authorized integrations, analytics services, or APIs you connect to our Platform.</p>
 
-          <h2><strong>3. Third-Party Services</strong></h2>
           <br />
-          <p>We may use trusted third-party tools like analytics providers, chatbots, or payment processors. These services have their own privacy policies and may collect data to perform their function (for example, Google Analytics for traffic analysis).</p>
-          <br />
+          <h2><strong>4. Cookies</strong></h2>
+          <p>We use cookies to enhance your Platform experience:</p>
+          <p>i) Essential Cookies: necessary for Platform functionality.</p>
+          <p>ii) Analytical Cookies: track usage and improve service.</p>
+          <p>iii) Preference Cookies: remember settings and preferences.</p>
+          <p>iv) Targeting Cookies: personalize experiences and workflow recommendations.</p>
+          <p>You may manage or block cookies via your browser, though essential functionality may be affected.</p>
 
-          <h2><strong>4. Data Protection</strong></h2>
           <br />
-          <p>We use secure systems to store and protect your personal data. Access is restricted to authorized personnel only, and we take steps to prevent unauthorized access, alteration, or disclosure.</p>
-          <br />
+          <h2><strong>5. Use of Personal Data</strong></h2>
+          <p>We use your personal data to:</p>
+          <p>i) Provide and maintain the Platform and Services</p>
+          <p>ii) Build and manage AI agents and workflow automation</p>
+          <p>iii) Communicate updates or notifications</p>
+          <p>iv) Respond to queries, requests, or support issues</p>
+          <p>v) Analyze and improve the Platform and Services</p>
+          <p>vi) Comply with legal obligations</p>
+          <p>vii) Perform tasks as instructed by our clients (if applicable)</p>
+          <p>Legal bases for processing include consent, contractual necessity, legitimate interests, or legal compliance.</p>
 
-          <h2><strong>5. Your Rights</strong></h2>
           <br />
-          <p>Depending on your location, you may have the right to:</p>
-          <ul>
-            <li>Access the data we have about you</li>
-            <li>Request corrections or deletion</li>
-            <li>Opt out of communications</li>
-            <li>Disable cookies in your browser settings</li>
-          </ul>
-          <br />
+          <h2><strong>6. Disclosure of Personal Data</strong></h2>
+          <p>We do not sell or trade personal data. We may share data with:</p>
+          <p>i) Internal Teams: for service operation and analytics</p>
+          <p>ii) Trusted Third Parties: service providers assisting with Platform operations, payment processing, or analytics</p>
+          <p>iii) Regulatory Authorities: when required by law</p>
+          <p>All third parties are required to keep your personal data secure and only process it for authorized purposes.</p>
 
-          <h2><strong>6. Cookies</strong></h2>
           <br />
-          <p>You can accept or refuse cookies. Please note that disabling cookies may affect how our website functions.</p>
-          <br />
+          <h2><strong>7. Cross-Border Transfers</strong></h2>
+          <p>Your personal data may be transferred to countries where our servers or service providers operate. Such transfers comply with applicable legal frameworks, including standard contractual clauses where required.</p>
 
-          <h2><strong>7. Changes to This Policy</strong></h2>
           <br />
-          <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated “Effective Date.”</p>
+          <h2><strong>8. Data Security</strong></h2>
+          <p>We implement reasonable technical and organizational measures to protect personal data, including secure servers, encryption, and access control. Only authorized personnel can access personal data.</p>
+
           <br />
-          
-          <h2><strong>8. Contact Us</strong></h2>
+          <h2><strong>9. Data Retention</strong></h2>
+          <p>i) Personal data is retained only as long as necessary for service purposes, legal obligations, or resolving disputes.</p>
+          <p>ii) Usage and workflow data may be anonymized for research or analytics purposes and retained indefinitely.</p>
+
           <br />
-          <p>If you have any questions about this Privacy Policy or how we handle your data, you can reach us at:</p>
-          <ul>
-            <li>📩 Email: hi@foxxage.com</li>
-            <li>📞 Phone/WhatsApp: +91-90319-98319</li>
-          </ul>
+          <h2><strong>10. Your Rights</strong></h2>
+          <p>Depending on your location and applicable laws, you may have rights to:</p>
+          <p>i) Access, correct, or erase personal data</p>
+          <p>ii) Object to or restrict processing</p>
+          <p>iii) Request data portability</p>
+          <p>iv) Withdraw consent for processing or revoke API/third-party access</p>
+          <p>Requests can be submitted via hi@foxxage.com. We aim to respond within 72 hours.</p>
+
+          <br />
+          <h2><strong>11. Updates to This Privacy Policy</strong></h2>
+          <p>We may update this Privacy Policy occasionally. Updates will be communicated via the Platform or email. Continued use of the Service constitutes consent to the updated Privacy Policy.</p>
+
+          <br />
+          <h2><strong>12. Disclaimers</strong></h2>
+          <p>Information you voluntarily share publicly (e.g., forums, social media) may be collected by others. Foxxage is not responsible for such collection or disclosure.</p>
         </div>
       </main>
       <Footer />
