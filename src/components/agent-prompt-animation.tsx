@@ -5,11 +5,11 @@ import { Bot, Sparkles } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const prompts = [
-  "Give me a task...",
-  "What should I automate?",
-  "Ready for instructions.",
-  "How can I help?",
-  "Waiting for a new job..."
+  "Spending too much time on repetitive tasks?",
+  "Is customer follow-up eating your day?",
+  "Where can I save you time today?",
+  "Switching between too many apps?",
+  "Paying more staff just to handle routine work?"
 ];
 
 export function AgentPromptAnimation() {
