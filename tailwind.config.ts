@@ -115,7 +115,12 @@ export default {
         'dash': {
           'from': { 'stroke-dashoffset': '100' },
           'to': { 'stroke-dashoffset': '0' },
-        }
+        },
+        scroll: {
+          'to': {
+            transform: 'translateX(-50%)',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -123,6 +128,7 @@ export default {
         'fade-in-up': 'fade-in-up 0.5s ease-out',
         'node-float': 'node-float 15s ease-in-out infinite',
         'dash': 'dash 1.5s linear infinite',
+        'scroll': 'scroll 40s linear infinite',
       },
     },
   },

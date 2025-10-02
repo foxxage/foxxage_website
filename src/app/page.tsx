@@ -8,6 +8,7 @@ import { CtaSection } from "@/components/sections/cta-section";
 import { ContactSection } from "@/components/sections/contact-section";
 import { FaqSection } from "@/components/sections/faq-section";
 import { AgentPromptSection } from "@/components/sections/agent-prompt-section";
+import { IntegrationsSection } from "@/components/sections/integrations-section";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <ServicesSection />
+        <IntegrationsSection />
         <WhyChooseUsSection />
         <AgentPromptSection />
         <CtaSection />
