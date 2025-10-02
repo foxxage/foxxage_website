@@ -91,11 +91,6 @@ export function Header() {
                       </Link>
                     ))}
                   </nav>
-                  <div className="mt-auto">
-                    <Button asChild className="w-full animated-outline">
-                       <Link href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Build My AI Agent</Link>
-                    </Button>
-                  </div>
                 </div>
               </SheetContent>
             </Sheet>
