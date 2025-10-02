@@ -2,7 +2,6 @@
 import { Mail, Instagram, MessageCircle, Bot, Sheet } from 'lucide-react';
 import type { SVGProps } from 'react';
 
-const GoogleDrive = (props: SVGProps<SVGSVGElement>) => <svg {...props} viewBox="0 0 24 24"><path fill="currentColor" d="M7.71 3.5L1.5 14.24l2.85 4.93l6.21-10.75zM15.42 20.5l-2.86-4.94L6.35 20.5h9.07zM9.69 5.25L13.15 11l-4.59 7.95h9.18L22.5 11z"></path></svg>;
 const Telegram = (props: SVGProps<SVGSVGElement>) => <svg {...props} viewBox="0 0 24 24"><path fill="currentColor" d="M9.78 18.65l.28-4.23l7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3L3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.58c-.28 1.13-1.04 1.4-1.74.88l-4.98-3.65l-2.33 2.22c-.24.24-.45.46-.8.46z" /></svg>;
 
 
@@ -12,7 +11,6 @@ const logos = [
     { icon: Telegram, name: 'Telegram' },
     { icon: Sheet, name: 'Google Sheet' },
     { icon: Mail, name: 'Gmail' },
-    { icon: GoogleDrive, name: 'Google Drive' },
     { icon: Bot, name: 'ChatGPT' },
 ];
 
