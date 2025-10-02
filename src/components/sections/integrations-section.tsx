@@ -1,5 +1,5 @@
 
-import { Mail, Instagram, MessageCircle, Bot, Sheet, Calculator, Calendar, Linkedin } from 'lucide-react';
+import { Mail, Instagram, MessageCircle, Bot, Sheet, Calculator, Calendar, Linkedin, MapPin } from 'lucide-react';
 import type { SVGProps } from 'react';
 
 const Telegram = (props: SVGProps<SVGSVGElement>) => <svg {...props} viewBox="0 0 24 24"><path fill="currentColor" d="M9.78 18.65l.28-4.23l7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3L3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.58c-.28 1.13-1.04 1.4-1.74.88l-4.98-3.65l-2.33 2.22c-.24.24-.45.46-.8.46z" /></svg>;
@@ -16,6 +16,7 @@ const XIcon = (props: SVGProps<SVGSVGElement>) => (
       />
     </svg>
   );
+const GoogleMyBusiness = (props: SVGProps<SVGSVGElement>) => <svg {...props} viewBox="0 0 24 24"><path fill="currentColor" d="M21.94 7.64h-9.35l-2.43 4.33l-2.9-2.9v-1.43h6.29V5.21H7.86l-2.65 2.65L3.4 6.04l2.64-2.65h11.1L21.94 7.64M18.5 8.9v8.34h-1.25V8.9Zm-2.5 0v8.34h-1.25V8.9Zm-2.5 0v5.84h-1.25V8.9Zm-2.5 0v5h-1.25V8.9Z"/></svg>;
 
 const logos = [
     { icon: Instagram, name: 'Instagram' },
@@ -29,6 +30,8 @@ const logos = [
     { icon: Calculator, name: 'Calculator' },
     { icon: Linkedin, name: 'LinkedIn' },
     { icon: XIcon, name: 'X.com' },
+    { icon: MapPin, name: 'Google Maps'},
+    { icon: GoogleMyBusiness, name: 'Google My Business'},
 ];
 
 export function IntegrationsSection() {
