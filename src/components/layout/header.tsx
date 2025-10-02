@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, Home, Info, Wrench, Mail, HelpCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Logo } from "@/components/logo";
@@ -10,11 +10,11 @@ import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 const navItems = [
-  { name: "HOME", href: "/" },
-  { name: "ABOUT", href: "/about" },
-  { name: "SERVICES", href: "/#services" },
-  { name: "CONTACT", href: "/#contact" },
-  { name: "FAQs", href: "/#faq" },
+  { name: "HOME", href: "/", icon: Home },
+  { name: "ABOUT", href: "/about", icon: Info },
+  { name: "SERVICES", href: "/#services", icon: Wrench },
+  { name: "CONTACT", href: "/#contact", icon: Mail },
+  { name: "FAQs", href: "/#faq", icon: HelpCircle },
 ];
 
 export function Header() {
@@ -77,15 +77,17 @@ export function Header() {
                   <div className="flex items-center justify-between">
                     <Logo />
                   </div>
-                  <nav className="mt-8 flex flex-col space-y-4">
-                    {navItems.map((item) => (
+                  <nav className="mt-8 flex flex-col space-y-2">
+                    {navItems.map((item, index) => (
                       <Link
                         key={item.name}
                         href={item.href}
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className="text-lg font-medium text-foreground/80 hover:text-primary transition-colors"
+                        className="group flex items-center gap-4 rounded-lg p-3 text-lg font-medium text-foreground/80 hover:bg-primary/10 hover:text-primary transition-all duration-200 animate-fade-in-up"
+                        style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'backwards' }}
                       >
-                        {item.name}
+                        <item.icon className="h-5 w-5 text-primary/80 group-hover:text-primary transition-colors" />
+                        <span>{item.name}</span>
                       </Link>
                     ))}
                   </nav>
