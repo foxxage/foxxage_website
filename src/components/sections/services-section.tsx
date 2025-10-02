@@ -1,9 +1,11 @@
 
 "use client";
 
+import { useState, useRef, useEffect } from "react";
 import { BotMessageSquare, Link as LinkIcon, BarChartBig } from "lucide-react";
 import type { LucideProps } from "lucide-react";
 import type { FC, SVGProps } from "react";
+import { cn } from "@/lib/utils";
 
 const WorkflowIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
@@ -81,21 +83,29 @@ interface ServiceCardProps {
   description: string;
   details: string[];
   id: string;
+  isOpen: boolean;
+  onClick: () => void;
 }
 
-function ServiceCard({ icon: Icon, title, description, details }: ServiceCardProps) {
+function ServiceCard({ icon: Icon, title, description, details, isOpen, onClick }: ServiceCardProps) {
   return (
-    <div className="group/service-card glass-card animated-outline p-8 rounded-2xl flex flex-col items-start h-full transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10">
+    <div 
+      className={cn(
+        "group/service-card glass-card animated-outline p-8 rounded-2xl flex flex-col items-start h-full transition-all duration-300 ease-in-out cursor-pointer",
+        isOpen ? "shadow-2xl shadow-primary/10 -translate-y-2" : "hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10"
+      )}
+      onClick={onClick}
+    >
       <div className="mb-4">
         <Icon className="h-8 w-8 text-primary transition-transform duration-300 group-hover/service-card:scale-110 group-hover/service-card:-rotate-6" />
       </div>
       <h3 className="font-headline text-xl font-semibold mb-2">{title}</h3>
       
-      <p className="text-foreground/70 transition-opacity duration-300 group-hover/service-card:opacity-0 group-hover/service-card:h-0 group-hover/service-card:mb-0 mb-4 h-auto">
-        {description}
-      </p>
+      <div className={cn("transition-all duration-300", isOpen ? "opacity-0 max-h-0" : "opacity-100 max-h-96")}>
+        <p className="text-foreground/70 mb-4">{description}</p>
+      </div>
 
-      <div className="transition-all duration-300 opacity-0 max-h-0 group-hover/service-card:opacity-100 group-hover/service-card:max-h-96">
+      <div className={cn("transition-all duration-300 overflow-hidden", isOpen ? "opacity-100 max-h-96" : "opacity-0 max-h-0")}>
         <ul className="space-y-2 text-foreground/80 list-disc pl-5">
           {details.map((detail, index) => (
             <li key={index}>{detail}</li>
@@ -108,8 +118,28 @@ function ServiceCard({ icon: Icon, title, description, details }: ServiceCardPro
 
 
 export function ServicesSection() {
+  const [openCardId, setOpenCardId] = useState<string | null>(null);
+  const servicesRef = useRef<HTMLDivElement>(null);
+
+  const handleCardClick = (id: string) => {
+    setOpenCardId(prevId => (prevId === id ? null : id));
+  };
+  
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (servicesRef.current && !servicesRef.current.contains(event.target as Node)) {
+        setOpenCardId(null);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <section className="py-8 md:py-12" id="services">
+    <section className="py-8 md:py-12" id="services" ref={servicesRef}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
            <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
@@ -119,7 +149,12 @@ export function ServicesSection() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {services.map((service) => (
-            <ServiceCard key={service.title} {...service} />
+            <ServiceCard 
+              key={service.id} 
+              {...service} 
+              isOpen={openCardId === service.id}
+              onClick={() => handleCardClick(service.id)}
+            />
           ))}
         </div>
       </div>
