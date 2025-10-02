@@ -22,6 +22,7 @@ export default function PrivacyPolicyPage() {
 
           <br />
           <h2><strong>1. Application of this Privacy Policy</strong></h2>
+          <br />
           <p>i) When we process personal data strictly on our clients’ instructions, we act as a data processor. You should review the client’s privacy policies for how they handle your data.</p>
           <br />
           <p>ii) When we collect data directly through our Platform or Services, we act as a data controller and are responsible for how your personal data is processed.</p>
@@ -30,6 +31,7 @@ export default function PrivacyPolicyPage() {
 
           <br />
           <h2><strong>2. Personal Data We Collect</strong></h2>
+          <br />
           <p>We collect personal data necessary to provide AI agents and workflow automation, including:</p>
           <p>i) Identity Data: user name, business name</p>
           <br />
@@ -46,6 +48,7 @@ export default function PrivacyPolicyPage() {
 
           <br />
           <h2><strong>3. How We Collect Data</strong></h2>
+          <br />
           <p>We collect data through:</p>
           <p>i) Direct Interactions: when you provide data while using our Platform, creating AI agents, integrating APIs, or contacting support.</p>
           <br />
@@ -55,6 +58,7 @@ export default function PrivacyPolicyPage() {
 
           <br />
           <h2><strong>4. Cookies</strong></h2>
+          <br />
           <p>We use cookies to enhance your Platform experience:</p>
           <p>i) Essential Cookies: necessary for Platform functionality.</p>
           <br />
@@ -68,6 +72,7 @@ export default function PrivacyPolicyPage() {
 
           <br />
           <h2><strong>5. Use of Personal Data</strong></h2>
+          <br />
           <p>We use your personal data to:</p>
           <p>i) Provide and maintain the Platform and Services</p>
           <br />
@@ -87,6 +92,7 @@ export default function PrivacyPolicyPage() {
 
           <br />
           <h2><strong>6. Disclosure of Personal Data</strong></h2>
+          <br />
           <p>We do not sell or trade personal data. We may share data with:</p>
           <p>i) Internal Teams: for service operation and analytics</p>
           <br />
@@ -98,20 +104,24 @@ export default function PrivacyPolicyPage() {
 
           <br />
           <h2><strong>7. Cross-Border Transfers</strong></h2>
+          <br />
           <p>Your personal data may be transferred to countries where our servers or service providers operate. Such transfers comply with applicable legal frameworks, including standard contractual clauses where required.</p>
 
           <br />
           <h2><strong>8. Data Security</strong></h2>
+          <br />
           <p>We implement reasonable technical and organizational measures to protect personal data, including secure servers, encryption, and access control. Only authorized personnel can access personal data.</p>
 
           <br />
           <h2><strong>9. Data Retention</strong></h2>
+          <br />
           <p>i) Personal data is retained only as long as necessary for service purposes, legal obligations, or resolving disputes.</p>
           <br />
           <p>ii) Usage and workflow data may be anonymized for research or analytics purposes and retained indefinitely.</p>
 
           <br />
           <h2><strong>10. Your Rights</strong></h2>
+          <br />
           <p>Depending on your location and applicable laws, you may have rights to:</p>
           <p>i) Access, correct, or erase personal data</p>
           <br />
@@ -125,10 +135,12 @@ export default function PrivacyPolicyPage() {
 
           <br />
           <h2><strong>11. Updates to This Privacy Policy</strong></h2>
+          <br />
           <p>We may update this Privacy Policy occasionally. Updates will be communicated via the Platform or email. Continued use of the Service constitutes consent to the updated Privacy Policy.</p>
 
           <br />
           <h2><strong>12. Disclaimers</strong></h2>
+          <br />
           <p>Information you voluntarily share publicly (e.g., forums, social media) may be collected by others. Foxxage is not responsible for such collection or disclosure.</p>
         </div>
       </main>
