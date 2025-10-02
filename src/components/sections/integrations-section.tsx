@@ -1,9 +1,22 @@
 
-import { Mail, Instagram, MessageCircle, Bot, Sheet, Calculator, Calendar } from 'lucide-react';
+import { Mail, Instagram, MessageCircle, Bot, Sheet, Calculator, Calendar, Linkedin } from 'lucide-react';
 import type { SVGProps } from 'react';
 
 const Telegram = (props: SVGProps<SVGSVGElement>) => <svg {...props} viewBox="0 0 24 24"><path fill="currentColor" d="M9.78 18.65l.28-4.23l7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3L3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.58c-.28 1.13-1.04 1.4-1.74.88l-4.98-3.65l-2.33 2.22c-.24.24-.45.46-.8.46z" /></svg>;
 const Discord = (props: SVGProps<SVGSVGElement>) => <svg {...props} viewBox="0 0 24 24"><path fill="currentColor" d="M20.3,3.3c-1.2-0.8-2.6-1.4-4-1.8c-0.2,0.5-0.4,1-0.6,1.5c-1.8-0.4-3.6-0.4-5.4,0C10.1,3,9.8,2.5,9.6,2c-1.5,0.4-2.9,1-4.1,1.8C2.8,7.9,1.6,13.2,3.3,18c1.8,2.9,4.8,4.8,8.2,5.5c1.4,0.3,2.8,0.3,4.2,0c3.4-0.7,6.4-2.6,8.2-5.5C25.6,13.2,24.5,7.9,20.3,3.3z M9.6,15.9c-0.9,0-1.7-0.8-1.7-1.8c0-1,0.8-1.8,1.7-1.8c0.9,0,1.7,0.8,1.7,1.8C11.3,15.1,10.5,15.9,9.6,15.9z M15.7,15.9c-0.9,0-1.7-0.8-1.7-1.8c0-1,0.8-1.8,1.7-1.8c0.9,0,1.7,0.8,1.7,1.8C17.4,15.1,16.6,15.9,15.7,15.9z"/></svg>;
+const XIcon = (props: SVGProps<SVGSVGElement>) => (
+    <svg
+      viewBox="0 0 1200 1227"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6904H306.615L611.412 515.685L658.88 583.579L1055.08 1150.31H892.476L569.165 687.854V687.828Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
 
 const logos = [
     { icon: Instagram, name: 'Instagram' },
@@ -15,6 +28,8 @@ const logos = [
     { icon: Calendar, name: 'Google Calendar' },
     { icon: Discord, name: 'Discord' },
     { icon: Calculator, name: 'Calculator' },
+    { icon: Linkedin, name: 'LinkedIn' },
+    { icon: XIcon, name: 'X.com' },
 ];
 
 export function IntegrationsSection() {
