@@ -7,11 +7,13 @@ const Slack = (props: SVGProps<SVGSVGElement>) => <svg {...props} viewBox="0 0 1
 
 const GoogleDrive = (props: SVGProps<SVGSVGElement>) => <svg {...props} viewBox="0 0 24 24"><path fill="currentColor" d="M7.71 3.5L1.5 14.24l2.85 4.93l6.21-10.75zM15.42 20.5l-2.86-4.94L6.35 20.5h9.07zM9.69 5.25L13.15 11l-4.59 7.95h9.18L22.5 11z"></path></svg>;
 const Stripe = (props: SVGProps<SVGSVGElement>) => <svg {...props} viewBox="0 0 24 24"><path fill="currentColor" d="M19.33 4.67a9.33 9.33 0 0 0-14.66 0H0v4.66h2.67a9.33 9.33 0 0 0 18.66 0H24V4.67h-4.67zm-9.33 10a4.67 4.67 0 1 1 0-9.34a4.67 4.67 0 0 1 0 9.34z"></path><path fill="currentColor" d="M0 14h24v4.67H0z"></path></svg>;
+const Gemini = (props: SVGProps<SVGSVGElement>) => <svg {...props} viewBox="0 0 24 24" fill="none"><path d="M5.104 2.103a.75.75 0 0 0-1.06 1.06l2.396 2.396a.25.25 0 0 1-.176.425H2.75a.75.75 0 0 0 0 1.5h3.51a.25.25 0 0 1 .176.424L4.045 10.3a.75.75 0 0 0 1.06 1.06l2.397-2.396a.25.25 0 0 1 .425.176v3.51a.75.75 0 0 0 1.5 0v-3.51a.25.25 0 0 1 .425-.176l2.396 2.396a.75.75 0 0 0 1.06-1.06L10.3 7.485a.25.25 0 0 1-.176-.424H13.6a.75.75 0 0 0 0-1.5h-3.47a.25.25 0 0 1-.176-.425l2.396-2.396a.75.75 0 0 0-1.06-1.06L8.892 4.045a.25.25 0 0 1-.425-.176V.36a.75.75 0 0 0-1.5 0v3.51a.25.25 0 0 1-.424.176L5.104 2.103z" fill="currentColor"></path><path d="M18.896 11.603a.75.75 0 0 0-1.06-1.06l-2.396 2.396a.25.25 0 0 1-.425-.176v-3.51a.75.75 0 0 0-1.5 0v3.51a.25.25 0 0 1-.425.176l-2.396-2.396a.75.75 0 0 0-1.06 1.06l2.396 2.396a.25.25 0 0 1-.176.425H9.4a.75.75 0 0 0 0 1.5h3.51a.25.25 0 0 1 .176.424l-2.396 2.397a.75.75 0 0 0 1.06 1.06l2.396-2.396a.25.25 0 0 1 .425.176v3.51a.75.75 0 0 0 1.5 0v-3.51a.25.25 0 0 1 .425-.176l2.396 2.396a.75.75 0 0 0 1.06-1.06l-2.396-2.397a.25.25 0 0 1 .176-.424h3.47a.75.75 0 0 0 0-1.5h-3.47a.25.25 0 0 1-.176-.425l2.396-2.396z" fill="currentColor"></path></svg>;
 
 const logos = [
     { icon: MessageCircle, name: 'WhatsApp' },
     { icon: Instagram, name: 'Instagram' },
     { icon: Bot, name: 'ChatGPT' },
+    { icon: Gemini, name: 'Gemini' },
     { icon: Mail, name: 'Gmail' },
     { icon: Sheet, name: 'Excel' },
     { icon: Slack, name: 'Slack' },
