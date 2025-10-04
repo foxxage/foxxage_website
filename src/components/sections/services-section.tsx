@@ -32,7 +32,7 @@ const services = [
     title: "Custom AI Agents",
     description: "From answering customer questions to capturing leads, our AI Agents never sleep — helping you stay connected to customers around the clock.",
     details: [
-      "24/7 Lead Capture & Qualification",
+      "24/7 Lead Capture",
       "Instant Customer Support on WhatsApp, Web, etc.",
       "Automated Appointment Booking",
       "Personalized Product Recommendations"
