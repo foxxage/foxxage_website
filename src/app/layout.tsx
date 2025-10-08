@@ -6,6 +6,9 @@ import { ThemeProvider } from '@/components/theme-provider';
 export const metadata: Metadata = {
   title: 'Foxxage | AI Agents & Workflow Automation',
   description: 'Work Less. Grow More. AI Agents and Workflow Automations for startups and SMEs.',
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({
