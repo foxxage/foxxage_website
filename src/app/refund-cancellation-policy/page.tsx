@@ -15,6 +15,7 @@ export default function RefundCancellationPolicyPage() {
           <br />
           <p>At Foxxage, we provide AI agents and workflow automation services. This Refund & Cancellation Policy explains how clients can cancel services and under what conditions refunds may be issued.</p>
           <br />
+          <p className="py-2">According to requirements our pricing differs from 1,999 INR and goes upto 149,999 INR.:</p>
           <h2><strong>1. Service Subscriptions</strong></h2>
           <br />
           <ul>
@@ -65,7 +66,7 @@ export default function RefundCancellationPolicyPage() {
           <br />
           <p className="py-2">To request cancellation or discuss potential refunds, please contact:</p>
           <p className="py-2">Email: info@foxxage.com</p>
-           <p className="py-2">Managed by Ramiz</p>
+           <p className="py-2">Managed by Ramiz Khan</p>
           <p className="py-2">Foxxage will review all requests and respond in a timely manner.</p>
         </div>
       </main>
