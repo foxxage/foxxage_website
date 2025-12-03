@@ -41,7 +41,7 @@ export default function RefundCancellationPolicyPage() {
                 <li className="py-2">- Material breach of contract by Foxxage.</li>
               </ul>
             </li>
-            <li className="py-2">iii) Refunds, if approved, will be processed to the original payment method within a reasonable time frame.</li>
+            <li className="py-2">iii) Refunds, if approved, will be processed to the original payment method within 7 working days.</li>
           </ul>
           <br />
           <h2><strong>4. Modifications & Service Changes</strong></h2>
@@ -65,6 +65,7 @@ export default function RefundCancellationPolicyPage() {
           <br />
           <p className="py-2">To request cancellation or discuss potential refunds, please contact:</p>
           <p className="py-2">Email: info@foxxage.com</p>
+           <p className="py-2">Managed by Ramiz</p>
           <p className="py-2">Foxxage will review all requests and respond in a timely manner.</p>
         </div>
       </main>
